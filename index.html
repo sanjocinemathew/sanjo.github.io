@@ -101,7 +101,7 @@
                 <h5 class="mb-3">The Catalyst for Transformative Growth</h5>
                 <p class="mt-20">Psychology Counsellor | Teacher Trainer | Leadership Mentor | Student Skill Enhancer |
                     Women Empowerment Advocate</p>
-                <button class="btn btn-outline-danger"><i class="icon-down-circled2 "></i>Download My CV</button>
+                <!-- <button class="btn btn-outline-danger"><i class="icon-down-circled2 "></i>Download My CV</button> -->
             </div>
             <!-- <div class="col-lg-4 about-card">
                 <h3 class="font-weight-light">Personal Info</h3>
@@ -1099,19 +1099,22 @@
                 <div class="col-lg-8">
                     <div class="contact-form-card">
                         <h4 class="contact-title">Send a message</h4>
-                        <form action="">
+                        <form class="contact-form form-validate" id="contactForm">
                             <div class="form-group">
-                                <input class="form-control" type="text" placeholder="Name *" required>
+                                <input class="form-control" type="text" id="name" name="name" placeholder="Name*"
+                                    required>
                             </div>
                             <div class="form-group">
-                                <input class="form-control" type="email" placeholder="Email *" required>
+                                <input class="form-control" type="email" id="email" name="email" placeholder="Email*"
+                                    required>
                             </div>
                             <div class="form-group">
-                                <textarea class="form-control" id=" placeholder=" Message *" rows="7"
-                                    required></textarea>
+                                <textarea class="form-control" id="message" name="message" placeholder="Message*"
+                                    rows="7" required></textarea>
                             </div>
                             <div class="form-group ">
-                                <button type="submit" class="form-control btn btn-primary">Send Message</button>
+                                <button name="submit" id="submit" type="submit"
+                                    class="form-control btn btn-primary">Send Message</button>
                             </div>
                         </form>
                     </div>
@@ -1194,8 +1197,8 @@
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtme10pzgKSPeJVJrG1O3tjR6lk98o4w8&callback=initMap"></script> -->
 
     <!-- JohnDoe js -->
-    <script src="assets/js/johndoe.js"></script>
-
+    <script src="./assets/js/johndoe.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 </body>
 
 </html>

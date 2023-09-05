@@ -148,3 +148,34 @@ function initMap() {
       ]
     });
 }
+
+
+const submit = document.getElementById("submit");
+submit.addEventListener("click", validate);
+function validate(e) {
+  const formValidity = document.getElementById("contactForm").checkValidity();
+  if (formValidity) {
+    e.preventDefault();
+
+    const name = $("#name").val();
+    const email = $("#email").val();
+    const message = $("#message").val();
+
+    const mailBody = {
+      name,
+      email,
+      message
+    }
+
+    axios
+      .post("https://submit-form.com/OFVLRd5r", mailBody)
+      .then(function (response) {
+        alert("Your request has been sent successfully!");
+        $("#contactForm")[0].reset();
+      })
+      .catch(function (response) {
+        console.error(response);
+        alert('Unable to send your request! Please try again!');
+      });
+  }
+}
