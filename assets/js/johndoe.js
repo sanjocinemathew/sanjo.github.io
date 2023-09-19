@@ -156,9 +156,7 @@ function validate(e) {
   const formValidity = document.getElementById("contactForm").checkValidity();
   if (formValidity) {
     e.preventDefault();
-
     const form = document.getElementById("contactForm");
-
     const formData = new FormData(form);
     let object = Object.fromEntries(formData);
     object.access_key = "f9c83cdc-a3a4-4441-922b-dced7f52a1cd";
@@ -192,12 +190,14 @@ function validate(e) {
 
 
 const bookAppointmentSubmit = document.getElementById("bookAppointmentSubmitBtn");
-bookAppointmentSubmit.addEventListener("click", validate);
-function validate(e) {
+bookAppointmentSubmit.addEventListener("click", bkavalidate);
+function bkavalidate(e) {
   const formValidity = document.getElementById("appointmentForm").checkValidity();
   if (formValidity) {
     e.preventDefault();
+
     const form = document.getElementById("appointmentForm");
+
     const formData = new FormData(form);
     let object = Object.fromEntries(formData);
     object.access_key = "f9c83cdc-a3a4-4441-922b-dced7f52a1cd";
@@ -211,6 +211,7 @@ function validate(e) {
       body: json,
     })
       .then(async (response) => {
+        let json = await response.json();
         if (response.status == 200) {
           alert("Thank you for reaching out. I appreciate your message and will respond promptly!");
         } else {
@@ -225,5 +226,7 @@ function validate(e) {
         form.reset();
 
       });
+  } else {
+    console.log(11)
   }
 }
