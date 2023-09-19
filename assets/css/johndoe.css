@@ -12839,3 +12839,21 @@ pre .code {
 * {
   scroll-behavior: smooth !important;
 }
+
+.color-white {
+  color: #fff !important;
+}
+
+@media (max-width: 991px) {
+  /* .bookAppointmentNavBtn{
+    
+  } */
+  .navbar-brand-name {
+    margin-left: 1rem;
+  }
+}
+@media (min-width: 992px) {
+  .navbar-brand-name {
+    display: none;
+  }
+}

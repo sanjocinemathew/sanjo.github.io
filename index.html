@@ -30,6 +30,11 @@
             class="ti-shift-left-alt"></i> Components</a> -->
     <header class="header">
         <div class="container">
+            <div class="bookAppointmentNav text-center">
+                <button class="btn bg-primary w-lg color-white float-sm-right mt-3 " data-toggle="modal"
+                    href="#bookAppointmentModal">Book an
+                    appointment</button>
+            </div>
             <ul class="social-icons pt-3">
                 <li class="social-item"><a class="social-link text-light" target="_blank"
                         href="https://www.facebook.com/sanjo.mathew.39"><i class="ti-facebook"
@@ -45,6 +50,7 @@
                 <!-- <li class="social-item"><a class="social-link text-light" href="#"><i class="ti-github"
                             aria-hidden="true"></i></a></li> -->
             </ul>
+
             <div class="header-content">
                 <h4 class="header-subtitle">Hello, I am</h4>
                 <h1 class="header-title">Sanjo Mathew</h1>
@@ -55,6 +61,7 @@
     </header>
     <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white" data-spy="affix" data-offset-top="510">
         <div class="container">
+            <h4 class="navbar-brand-name"> Sanjo Mathew</h4>
             <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse"
                 data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -994,7 +1001,8 @@
                 Customised Training Programs</p>
             <a href="#contact">
 
-                <button class="btn bg-primary w-lg">Contact Me</button>
+                <button class="btn bg-primary w-lg color-white" data-toggle="modal" href="#bookAppointmentModal">Book an
+                    appointment</button>
             </a>
         </div>
     </section>
@@ -1292,6 +1300,7 @@
                     <div class="contact-form-card">
                         <h4 class="contact-title">Send a message</h4>
                         <form class="contact-form form-validate" id="contactForm">
+
                             <div class="form-group">
                                 <input class="form-control" type="text" id="name" name="name" placeholder="Name*"
                                     required>
@@ -1364,6 +1373,50 @@
 
         </div>
     </div>
+    <div class="modal fade" id="bookAppointmentModal" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    Book An Appointment
+                    <button type="button" class="close" data-dismiss="modal" aria-label=""><span>×</span></button>
+
+                </div>
+
+                <div class="modal-body">
+                    <div class="contact-form-card">
+                        <form class="contact-form form-validate" id="appointmentForm">
+
+                            <div class="form-group">
+                                <input class="form-control" type="text" id="name" name="name" placeholder="Name*"
+                                    required>
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control" type="number" id="phone" name="phone" placeholder="Phone">
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control" type="email" id="email" name="email" placeholder="Email*"
+                                    required>
+                            </div>
+                            <div class="form-group">
+                                <label>Appointment Date</label>
+                                <input class="form-control" type="date" id="date" name="date">
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control" id="notes" name="notes" placeholder="Notes"
+                                    rows="7"></textarea>
+                            </div>
+                            <div class="form-group ">
+                                <button name="submit" id="bookAppointmentSubmitBtn" type="submit"
+                                    class="form-control btn btn-primary">Book Appointment</button>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
     <footer class="footer py-3">
         <div class="container">
             <p class="small mb-0 text-light">
@@ -1390,7 +1443,7 @@
 
     <!-- JohnDoe js -->
     <script src="./assets/js/johndoe.js"></script>
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <!-- <script src="https://unpkg.com/axios/dist/axios.min.js"></script> -->
 </body>
 
 </html>
