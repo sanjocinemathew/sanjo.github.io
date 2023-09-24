@@ -230,3 +230,7 @@ function bkavalidate(e) {
     console.log(11)
   }
 }
+
+$(window).on('load', function () {
+  $('#program-modal').modal('show');
+});
