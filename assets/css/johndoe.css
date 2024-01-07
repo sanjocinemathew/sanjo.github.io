@@ -12377,10 +12377,10 @@ p {
 
 /* blog wrapper */
 .blog-card {
-  display: -webkit-box;
+  /* display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
-  display: flex;
+  display: flex; */
   text-align: left;
   border: 1px solid #dee2e6;
   margin-bottom: 30px;
