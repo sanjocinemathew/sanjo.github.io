@@ -12893,3 +12893,7 @@ pre .code {
 .color-black {
   color: black;
 }
+
+.card-text-new{
+  margin-bottom:0.3rem !important;
+}
