@@ -231,6 +231,6 @@ function bkavalidate(e) {
   }
 }
 
-$(window).on('load', function () {
-  $('#program-modal').modal('show');
-});
+// $(window).on('load', function () {
+//   $('#program-modal').modal('show');
+// });
