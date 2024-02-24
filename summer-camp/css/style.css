@@ -556,6 +556,10 @@ a:focus {
   color: #fdfdfe;
 }
 
+.img-border{
+  border-radius: 30px;
+}
+
 
 
 /* end footer section*/
