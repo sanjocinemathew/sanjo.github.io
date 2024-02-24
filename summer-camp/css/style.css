@@ -277,7 +277,7 @@ a:focus {
 }
 
 .why_section a {
-  background-color: #6ebca8;
+  background-color: #00B140;
   color: #fefeff;
 }
 
@@ -563,3 +563,8 @@ a:focus {
 
 
 /* end footer section*/
+
+
+html {
+  scroll-behavior: smooth;
+}
