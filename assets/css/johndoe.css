@@ -12894,6 +12894,11 @@ pre .code {
   color: black;
 }
 
-.card-text-new{
-  margin-bottom:0.3rem !important;
+.card-text-new {
+  margin-bottom: 0.3rem !important;
+}
+
+.secondary-button {
+  background-color: #00b199;
+  color: #fff;
 }
