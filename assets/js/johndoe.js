@@ -227,7 +227,6 @@ function bkavalidate(e) {
 
       });
   } else {
-    console.log(11)
   }
 }
 

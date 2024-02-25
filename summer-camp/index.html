@@ -137,7 +137,7 @@
                 Internationally via Zoom Meetings
               </p>
               <div class="">
-                <a href="" class="call_to-btn btn_white-border">
+                <a href="./summer-camp-brochure-sanjo.pdf" download class="call_to-btn btn_white-border">
                   Download Brochure
                 </a>
 
@@ -358,27 +358,27 @@
             </h2>
           </div>
           <div class="d-flex justify-content-center d-md-block">
-            <!-- <p>
+            <p>
               Express your interest by providing your details and share your preferred choice through your message.
-            </p> -->
+            </p>
           </div>
-          <!-- <form action="">
+          <form id="contactForm">
             <div class="contact_form-container">
               <div>
                 <div>
-                  <input type="text" placeholder="Name">
+                  <input type="text" placeholder="Name" name="name" required>
                 </div>
                 <div>
-                  <input type="email" placeholder="Email">
+                  <input type="email" placeholder="Email" name="email" required>
                 </div>
                 <div>
-                  <input type="text" placeholder="Phone Number">
+                  <input type="text" placeholder="Phone Number" name="phoneNumber" required>
                 </div>
                 <div class="mt-5">
-                  <input type="text" placeholder="Message">
+                  <input type="text" placeholder="Message" name="message" required>
                 </div>
                 <div class="mt-5">
-                  <button type="submit">
+                  <button type="submit" id="contactFormSubmitBtn">
                     send
                   </button>
                 </div>
@@ -386,7 +386,7 @@
 
             </div>
 
-          </form> -->
+          </form>
         </div>
         <div class="col-md-6">
           <div class="contact_img-box">
@@ -450,6 +450,7 @@
   </section>
   <!-- footer section -->
 
+  <script src="./js/summer-camp.js"></script>
   <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
   <script type="text/javascript" src="js/bootstrap.js"></script>
 
