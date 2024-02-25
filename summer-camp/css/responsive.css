@@ -2,6 +2,9 @@
 
 @media (max-width: 992px) {
 
+    .insights-buttons a {
+        margin: 1rem;
+    }
 
     .hero-container {
         flex-direction: column;
@@ -14,7 +17,7 @@
 
     .hero_img-container {
         width: 100%;
-         
+
     }
 
     .hero-container.container {
@@ -30,6 +33,14 @@
 
 
 @media (max-width: 768px) {
+
+    .insights-buttons a {
+        margin: 1rem;
+    }
+
+    .contact_img-box {
+        margin: 2rem;
+    }
 
 
     .hero_detail-box {
