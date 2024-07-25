@@ -23,6 +23,92 @@
 
         gtag('config', 'G-6RXTX63CVY');
     </script>
+    <style>
+  
+        .lead {
+            font-size: 1.2em;
+        }
+
+        .fact-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .fact-list li {
+            margin-bottom: 10px;
+            padding-left: 20px;
+            position: relative;
+            animation: fadeInUp 1s ease-out;
+            color: #444;
+
+        }
+
+        .fact-list li:before {
+            content: ' 😊 ';
+            position: absolute;
+            left: 0;
+            color: #007bff;
+        }
+
+        .page-header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .page-header h1 {
+            font-size: 2.5em;
+            margin: 0;
+            animation: fadeInDown 1s ease-out;
+        }
+
+        .page-header p {
+            font-size: 1.2em;
+            color: #777;
+        }
+
+      
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .image-container img {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 1s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
@@ -94,8 +180,8 @@
         </div>
     </nav>
     <div id="fun-facts"></div>
-    <br/>
-    <br/>
+    <br />
+    <br />
     <section class="sections mt-5 ">
         <div class="container ">
             <div class="page-header">
