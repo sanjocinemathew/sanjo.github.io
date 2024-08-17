@@ -145,9 +145,9 @@ var data = {
 		{ "title": "#RisingAboveTheTide", "id": "2", "showInHome": true },
 		{ "title": "#OvercomingNegativity", "id": "3", "showInHome": true },
 		{ "title": "#PositiveMindset", "id": "4", "showInHome": true },
-		{ "title": "#BreakTheCycle", "id": "5" },
+		{ "title": "#BreakTheCycle", "id": "5", "showInHome": true },
 		{ "title": "#SelfGrowth", "id": "6", "showInHome": false },
-		{ "title": "#SupportEachOther", "id": "7" },
+		{ "title": "#SupportEachOther", "id": "7", "showInHome": true },
 		{ "title": "#Inspiration", "id": "8", "showInHome": false },
 	],
 	"categories": {
@@ -161,7 +161,7 @@ var data = {
 			"id": "crab-basket-mentality-sanjo-mathew-motivational-blog",
 			"title": "Rising Above the Tide: Lessons from the Crab Basket Mentality.",
 			"subTitle": "Echoes of Wisdom - Inspired by Life",
-			"image": "crab-basket-mentality-sanjo-mathew-blog.png",
+			"image": "crab-basket-mentality-sanjo-mathew-blog.jpg",
 			"authorId": "sanjomathew",
 			"date": "01 Jan, 2024",
 			"readTime": "3 min to Read",
@@ -193,7 +193,7 @@ var data = {
 			"id": "you-dont-have-to-be-born-skilful-to-be-extra-ordinary-sanjo-mathew-motivational-blog",
 			"title": "You don't have to be born skilful to be extra-ordinary.",
 			"subTitle": "Echoes of Wisdom - Inspired by Life",
-			"image": "you-dont-have-to-be-born-skilful-to-be-extra-ordinary.png",
+			"image": "you-dont-have-to-be-born-skilful-to-be-extra-ordinary.jpg",
 			"authorId": "sanjomathew",
 			"date": "01 Jan, 2024",
 			"readTime": "3 min to Read",
@@ -215,7 +215,7 @@ var data = {
 			"id": "dolphin-wisdom-navigating-life-s-waves-with-resilient-spirits-sanjo-mathew-motivational-blog",
 			"title": "Dolphin Wisdom: Navigating Life's Waves with Resilient Spirits.",
 			"subTitle": "Echoes of Wisdom - Inspired by Life",
-			"image": "dolphin-wisdom-navigating-life-s-waves-with-resilient-spirits-sanjo-mathew-motivational-blog.png",
+			"image": "dolphin-wisdom-navigating-life-s-waves-with-resilient-spirits-sanjo-mathew-motivational-blog.jpg",
 			"authorId": "sanjomathew",
 			"date": "01 Jan, 2024",
 			"readTime": "3 min to Read",
@@ -238,7 +238,7 @@ var data = {
 			"id": "the-rhythmic-persistence-of-a-snail-a-skill-to-master-in-every-profession",
 			"title": "The Rhythmic Persistence of a Snail: A Skill to Master in Every Profession.",
 			"subTitle": "Echoes of Wisdom - Inspired by Life",
-			"image": "the-rhythmic-persistence-of-a-snail-a-skill-to-master-in-every-profession-sanjo-mathew-motivational-blog.png",
+			"image": "the-rhythmic-persistence-of-a-snail-a-skill-to-master-in-every-profession-sanjo-mathew-motivational-blog.jpg",
 			"authorId": "sanjomathew",
 			"date": "01 Jan, 2024",
 			"readTime": "3 min to Read",
@@ -276,7 +276,7 @@ var data = {
 			"id": "embracing-adversity-choosing-your-response-sanjo-mathew-motivational-blog",
 			"title": "Embracing Adversity: Choosing Your Response - Potato, Egg, or Coffee?",
 			"subTitle": "Embrace Series",
-			"image": "embracing-adversity-choosing-your-response-sanjo-mathew-motivational-blog.png",
+			"image": "embracing-adversity-choosing-your-response-sanjo-mathew-motivational-blog.jpg",
 			"authorId": "sanjomathew",
 			"date": "01 Jan, 2024",
 			"readTime": "3 min to Read",
@@ -293,7 +293,7 @@ var data = {
 			"id": "embrace-change-the-transformative-perspectives-sanjo-mathew-motivational-blog",
 			"title": "Embrace Change: The Transformative Perspectives",
 			"subTitle": "Embrace Series",
-			"image": "embrace-change-the-transformative-perspectives-sanjo-mathew-motivational-blog.png",
+			"image": "embrace-change-the-transformative-perspectives-sanjo-mathew-motivational-blog.jpg",
 			"authorId": "sanjomathew",
 			"date": "01 Jan, 2024",
 			"readTime": "3 min to Read",
@@ -309,7 +309,7 @@ var data = {
 			"id": "embracing-imperfection-the-power-of-authenticity-sanjo-mathew-motivational-blog",
 			"title": "Embracing Imperfection: The Power of Authenticity",
 			"subTitle": "Embrace Series",
-			"image": "embracing-imperfection-the-power-of-authenticity-sanjo-mathew-motivational-blog.png",
+			"image": "embracing-imperfection-the-power-of-authenticity-sanjo-mathew-motivational-blog.jpg",
 			"authorId": "sanjomathew",
 			"date": "01 Jan, 2024",
 			"readTime": "3 min to Read",
@@ -324,7 +324,7 @@ var data = {
 			"id": "embracing-uncertainty-learn-to-soar-like-an-albatross-sanjo-mathew-motivational-blog",
 			"title": "Embracing Uncertainty: Learn to Soar Like an Albatross",
 			"subTitle": "Embrace Series",
-			"image": "embracing-uncertainty-learn-to-soar-like-an-albatross-sanjo-mathew-motivational-blog.png",
+			"image": "embracing-uncertainty-learn-to-soar-like-an-albatross-sanjo-mathew-motivational-blog.jpg",
 			"authorId": "sanjomathew",
 			"date": "01 Jan, 2024",
 			"readTime": "3 min to Read",
@@ -338,7 +338,7 @@ var data = {
 			"id": "embrace-lifes-transitions-learning-from-the-oyster-sanjo-mathew-motivational-blog",
 			"title": "Embrace Life's Transitions: Learning from the Oyster",
 			"subTitle": "Embrace Series",
-			"image": "embrace-lifes-transitions-learning-from-the-oyster-sanjo-mathew-motivational-blog.png",
+			"image": "embrace-lifes-transitions-learning-from-the-oyster-sanjo-mathew-motivational-blog.jpg",
 			"authorId": "sanjomathew",
 			"date": "01 Jan, 2024",
 			"readTime": "3 min to Read",
@@ -357,7 +357,7 @@ var data = {
 			"id": "embracing-diversity-learning-from-the-octopus-sanjo-mathew-motivational-blog",
 			"title": "Embracing Diversity: Learning from the Octopus",
 			"subTitle": "Embrace Series",
-			"image": "embracing-diversity-learning-from-the-octopus-sanjo-mathew-motivational-blog.png",
+			"image": "embracing-diversity-learning-from-the-octopus-sanjo-mathew-motivational-blog.jpg",
 			"authorId": "sanjomathew",
 			"date": "01 Jan, 2024",
 			"readTime": "3 min to Read",
@@ -376,7 +376,7 @@ var data = {
 			"id": "embracing-self-love-a-learning-from-the-sea-otter-sanjo-mathew-motivational-blog",
 			"title": "Embracing Self-Love: A Learning from the Sea Otter",
 			"subTitle": "Embrace Series",
-			"image": "embracing-self-love-a-learning-from-the-sea-otter-sanjo-mathew-motivational-blog.png",
+			"image": "embracing-self-love-a-learning-from-the-sea-otter-sanjo-mathew-motivational-blog.jpg",
 			"authorId": "sanjomathew",
 			"date": "01 Jan, 2024",
 			"readTime": "3 min to Read",
@@ -398,7 +398,7 @@ var data = {
 			"id": "courageous-beginnings-success-isnt-a-destination-its-the-courage-to-start-the-journey-sanjo-mathew-motivational-blog",
 			"title": "Courageous Beginnings: Success Isn't a Destination, It's the Courage to Start the Journey",
 			"subTitle": "Redefining Success Series",
-			"image": "courageous-beginnings-success-isnt-a-destination-its-the-courage-to-start-the-journey-sanjo-mathew-motivational-blog.png",
+			"image": "courageous-beginnings-success-isnt-a-destination-its-the-courage-to-start-the-journey-sanjo-mathew-motivational-blog.jpg",
 			"authorId": "sanjomathew",
 			"date": "01 Jan, 2024",
 			"readTime": "3 min to Read",
@@ -416,7 +416,7 @@ var data = {
 			"id": "success-is-finding-joy-in-the-process-not-just-the-outcomey-sanjo-mathew-motivational-blog",
 			"title": "Success is finding joy in the process,not just the outcome",
 			"subTitle": "Redefining Success Series",
-			"image": "success-is-finding-joy-in-the-process-not-just-the-outcomey-sanjo-mathew-motivational-blog.png",
+			"image": "success-is-finding-joy-in-the-process-not-just-the-outcomey-sanjo-mathew-motivational-blog.jpg",
 			"authorId": "sanjomathew",
 			"date": "01 Jan, 2024",
 			"readTime": "3 min to Read",
@@ -458,7 +458,7 @@ var data = {
 			"id": "freedom-mindset-true-freedom-and-success-bloom-from-hope-exploration-and-curiosity",
 			"title": "Freedom mindset: True freedom and success bloom from hope, exploration, and curiosity.",
 			"subTitle": "Redefining Success Series",
-			"image": "freedom-mindset-true-freedom-and-success-bloom-from-hope,-exploration,-and-curiosity.png",
+			"image": "freedom-mindset-true-freedom-and-success-bloom-from-hope,-exploration,-and-curiosity.jpg",
 			"authorId": "sanjomathew",
 			"date": "01 Jan, 2024",
 			"readTime": "2 min to Read",
@@ -475,7 +475,7 @@ var data = {
 			"id": "dream-clarity-the-foundation-of-success-sanjo-mathew-motivational-blog",
 			"title": "Dream Clarity: The Foundation of Success",
 			"subTitle": "Redefining Success Series",
-			"image": "dream-clarity-the-foundation-of-success-sanjo-mathew-motivational-blog.png",
+			"image": "dream-clarity-the-foundation-of-success-sanjo-mathew-motivational-blog.jpg",
 			"authorId": "sanjomathew",
 			"date": "01 Jan, 2024",
 			"readTime": "2 min to Read",
@@ -493,7 +493,7 @@ var data = {
 			"id": "balance-and-boundaries-sanjo-mathew-motivational-blog",
 			"title": "Balance & Boundaries",
 			"subTitle": "Redefining Success Series",
-			"image": "balance-and-boundaries-sanjo-mathew-motivational-blog.png",
+			"image": "balance-and-boundaries-sanjo-mathew-motivational-blog.jpg",
 			"authorId": "sanjomathew",
 			"date": "01 Jan, 2024",
 			"readTime": "2 min to Read",
@@ -548,8 +548,8 @@ function loadContent() {
             <h3 class="h4 mb-3"><a class="post-title" href="post-details.html?blogId=${editorsPickPost.id}">${editorsPickPost.title}</a></h3>
             <ul class="card-meta list-inline">
               <li class="list-inline-item">
-                <a href="author-single.html" class="card-meta-author">
-                  <img src="${data.author.photo}">
+                <a href="about-me.html" class="card-meta-author">
+                  <img src="${data.author.photo}" alt="Photo of ${data.author.shortName}-${data.author.bio}">
                    <span>${data.author.shortName}</span>
                 </a>
               </li>
@@ -603,7 +603,7 @@ function loadContent() {
             <ul class="card-meta list-inline">
               <li class="list-inline-item">
                 <a href="about-me.html" class="card-meta-author">
-                  <img src="${data.author.photo}">
+                  <img src="${data.author.photo}" alt="Photo of ${data.author.shortName}-${data.author.bio}">
                    <span>${data.author.shortName}</span>
                 </a>
               </li>
@@ -638,7 +638,7 @@ function loadContent() {
             <ul class="card-meta list-inline">
                 <li class="list-inline-item">
                     <a href="about-me.html" class="card-meta-author">
-                        <img src="${data.author.photo}">
+                        <img src="${data.author.photo}" alt="Photo of ${data.author.shortName}-${data.author.bio}">
                    <span>${data.author.shortName}</span>
                     </a>
                 </li>
@@ -673,7 +673,7 @@ function loadContent() {
           <ul class="card-meta my-3 list-inline">
             <li class="list-inline-item">
               <a href="about-me.html" class="card-meta-author">
-                <img src="${data.author.photo}">
+                <img src="${data.author.photo}" alt="Photo of ${data.author.shortName}-${data.author.bio}">
                 <span>${data.author.shortName}</span>
               </a>
             </li>
@@ -713,7 +713,7 @@ function loadContent() {
 					<ul class="card-meta list-inline">
 					<li class="list-inline-item">
 						<a href="about-me.html" class="card-meta-author">
-						<img src="${data.author.photo}">
+						<img src="${data.author.photo}" alt="Photo of ${data.author.shortName}-${data.author.bio}">
                    <span>${data.author.shortName}</span>
 						</a>
 					</li>
