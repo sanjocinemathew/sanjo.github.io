@@ -138,7 +138,7 @@ var data = {
 		"id": "sanjomathew",
 		"name": "Sanjo Cine Mathew",
 		"shortName": "Sanjo Mathew",
-		"photo": "images/author.jpg",
+		"photo": "images/author.png",
 		"bio": "Counselling Psychologist, Skill Coach & Learning Facilitator",
 		"socialLinks": {
 			"facebook": "https://www.facebook.com/sanjo.mathew.39/",
