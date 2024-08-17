@@ -115,7 +115,6 @@ $(window).on('load', function () {
 	$('.video-btn').click(function () {
 		$videoSrc = $(this).data('src');
 	});
-	console.log($videoSrc);
 	$('#myModal').on('shown.bs.modal', function (e) {
 		$('#video').attr('src', $videoSrc + '?autoplay=1&amp;modestbranding=1&amp;showinfo=0');
 	});
@@ -150,26 +149,6 @@ var data = {
 		{ "title": "#SelfGrowth", "id": "6", "showInHome": false },
 		{ "title": "#SupportEachOther", "id": "7" },
 		{ "title": "#Inspiration", "id": "8", "showInHome": false },
-		{ "title": "#Motivation", "id": "9" },
-		{ "title": "#Empowerment ", "id": "10" },
-		{ "title": "#CommunityOverCompetition", "id": "11" },
-		{ "title": "#CrabBasketLessons", "id": "12" },
-		{ "title": "#RiseTogether", "id": "13" },
-		{ "title": "#MindsetMatters", "id": "14" },
-		{ "title": "#Change", "id": "15" },
-		{ "title": "#BeExtraordinary", "id": "16" },
-		{ "title": "#SkillsAreLearned", "id": "17" },
-		{ "title": "#UnlockYourPotential ", "id": "18" },
-		{ "title": "#BelieveInYourself  ", "id": "19" },
-		{ "title": "#GrowthMindset   ", "id": "20" },
-		{ "title": "#OrdinaryToExtraordinary    ", "id": "21" },
-		{ "title": "#SuccessIsEarned     ", "id": "22" },
-		{ "title": "#DreamBig      ", "id": "23" },
-		{ "title": "#SelfImprovement       ", "id": "24" },
-		{ "title": "#AchieveGreatness        ", "id": "25" },
-		{ "title": "#HardWorkPaysOff         ", "id": "26" },
-		{ "title": "#Inspiration", "id": "27" },
-		{ "title": "#MotivationMonday", "id": "28" },
 	],
 	"categories": {
 		"cat1": "",
@@ -550,20 +529,16 @@ var data = {
 
 function loadContent() {
 	const currentPage = window.location.pathname.split("/").pop().split(".")[0];
-	console.log(currentPage)
-	if (currentPage === 'index') {
+	const urlParams = new URLSearchParams(window.location.search);
+	console.log(currentPage);
+	if (currentPage === 'index' || currentPage === '') {
 		document.getElementById("tags").innerHTML = `
 		${data.tags.map((tag) => tag.showInHome === true ?
-			`<li class="list-inline-item"><a href="tags.html?${tag.title}">${tag.title}</a></li>` : ""
+			`<li class="list-inline-item"><a href="tags.html?tag=${tag.title.replace("#", "")}">${tag.title}</a></li>` : ""
 		).join('')}
-	`;
-		document.getElementById("tag-widget").innerHTML = `
-		${data.tags.map((tag) =>
-			`<li class="list-inline-item"><a href="tags.html?${tag.title}">${tag.title}</a></li>`
-		).join('')}
-	`;
+		`;
+
 		const editorsPickPost = data.posts.find((post) => post.id === data.sections.editorsPick.postId);
-		console.log(editorsPickPost);
 		document.getElementById("editors-pick").innerHTML = `
           <div class="post-slider slider-sm">
             <img src="images/post/${editorsPickPost.image}" class="card-img-top" alt="${editorsPickPost.title}">
@@ -587,7 +562,7 @@ function loadContent() {
               <li class="list-inline-item">
                 <ul class="card-meta-tag list-inline">
                   ${editorsPickPost.tags.slice(0, 4).map((tag) =>
-			`<li class="list-inline-item"><a href="tags.html?${tag}">${tag}</a></li>`
+			`<li class="list-inline-item"><a href="tags.html?tag=${tag.replace("#", "")}">${tag}</a></li>`
 		).join('')}
                 </ul>
               </li>
@@ -596,29 +571,27 @@ function loadContent() {
             <a href="post-details.html?blogId=${editorsPickPost.id}" class="btn btn-outline-primary">Read More</a>
           </div>
 			`;
-		/////////////////////////
 		const tendingPosts = data.posts.filter((post) => data.sections.trendingPosts.includes(post.id));
 		document.getElementById("trending-posts").innerHTML =
-			`		${tendingPosts.map((post) => `
-		<article class="card mb-4">
-            <div class="card-body d-flex">
-              <img class="card-img-sm" src="images/post/${post.image}" alt="${post.title}">
-              <div class="ml-3">
-                <h4><a href="post-details.html?blogId=${post.id}" class="post-title">${post.title}</a></h4>
-                <ul class="card-meta list-inline mb-0">
-                  <li class="list-inline-item mb-0">
-                    <i class="ti-calendar"></i>${post.date}
-                  </li>
-                  <li class="list-inline-item mb-0">
-                    <i class="ti-timer"></i>${post.readTime}
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </article>`)}`;
+			`${tendingPosts.map((post) => `
+				<article class="card mb-4">
+					<div class="card-body d-flex">
+					<img class="card-img-sm" src="images/post/${post.image}" alt="${post.title}">
+					<div class="ml-3">
+						<h4><a alt="${post.title}" href="post-details.html?blogId=${post.id}" class="post-title">${post.title}</a></h4>
+						<ul class="card-meta list-inline mb-0">
+						<li class="list-inline-item mb-0">
+							<i class="ti-calendar"></i>${post.date}
+						</li>
+						<li class="list-inline-item mb-0">
+							<i class="ti-timer"></i>${post.readTime}
+						</li>
+						</ul>
+					</div>
+					</div>
+			</article>`)}`;
 
 		const popularPost = data.posts.find((post) => post.id == data.sections.popularPost.postId);
-		console.log("popularPost", popularPost);
 
 		document.getElementById("popular-post").innerHTML = `
 		  <article class="card">
@@ -643,7 +616,7 @@ function loadContent() {
               <li class="list-inline-item">
                <ul class="card-meta-tag list-inline">
                   ${popularPost.tags.slice(0, 4).map((tag) =>
-			`<li class="list-inline-item"><a href="tags.html?${tag}">${tag}</a></li>`
+			`<li class="list-inline-item"><a href="tags.html?tag=${tag.replace("#", "")}">${tag}</a></li>`
 		).join('')}
                 </ul>
               </li>
@@ -652,11 +625,9 @@ function loadContent() {
             <a href="post-details.html?blogId=${popularPost.id}" class="btn btn-outline-primary">Read More</a>
           </div>
         </article>`;
-
-   
 		document.getElementById("recent-posts").innerHTML = ` <h2 class="h5 section-title">Recent Post</h2>`;
-		document.getElementById("recent-posts").innerHTML += 
-		`
+		document.getElementById("recent-posts").innerHTML +=
+			`;
 		${data.posts.reverse().map((post) => `
 		    <article class="card mb-4">
         <div class="post-slider text-center">
@@ -680,33 +651,23 @@ function loadContent() {
                 <li class="list-inline-item">
                     <ul class="card-meta-tag list-inline">
                        ${post.tags.slice(0, 4).map((tag) =>
-			`<li class="list-inline-item"><a href="tags.html?${tag}">${tag}</a></li>`
-		).join('')}
+				`<li class="list-inline-item"><a href="tags.html?tag=${tag.replace("#", "")}">${tag}</a></li>`
+			).join('')}
                     </ul>
                 </li>
             </ul>
             <p>${post.content.substring(0, 250)}…</p>
             <a href="post-details.html?blogId=${post.id}" alt=${post.title} class="btn btn-outline-primary">Read More</a>
         </div>
-    </article>`)}`
-
+  		  </article>`)}`;
 	} else if (currentPage === 'post-details') {
-		const urlParams = new URLSearchParams(window.location.search);
 		const blogId = urlParams.get('blogId');
 		const blogPost = data.posts.find((post) => post.id === blogId);
-		console.log(blogPost)
-		// const tagsInPost = blogPost.tags.map(tagId => {
-		// 	const tag = data.tags.find(t => t.id === tagId);
-		// 	return tag ? tag.title : null; 
-		// }).filter(title => title !== null); 
-
-
 		document.getElementById("sanjo-blog").innerHTML = `
 		<article>
           <div class="post-slider mb-4 text-center">
             <img src="images/post/${blogPost.image}" style="width:50%;" class="card-img" alt="${blogPost.title}">
           </div>
-          
           <h1 class="h2">${blogPost.title}</h1>
           <p class="h4"><i>${blogPost.subTitle}</i></p>
           <ul class="card-meta my-3 list-inline">
@@ -725,7 +686,7 @@ function loadContent() {
             <li class="list-inline-item">
               <ul class="card-meta-tag list-inline">
 			  ${blogPost.tags.map((tag) =>
-			`<li class="list-inline-item"><a href="tags.html?${tag}">${tag}</a></li>`
+			`<li class="list-inline-item"><a href="tags.html?tag=${tag.replace("#", "")}">${tag}</a></li>`
 		).join('')}
               </ul>
             </li>
@@ -734,10 +695,78 @@ function loadContent() {
 		  ${blogPost.content}
           </div>
         </article>
-		
 		`;
+	} else if (currentPage === 'tags') {
+		const tag = urlParams.get('tag');
+		console.log(tag)
+		const postsWithTag = data.posts.filter((post) => post.tags.includes(`#${tag}`));
+		console.log(postsWithTag)
+		document.getElementById("posts-with-tags").innerHTML = `
+		 <h1 class="h2 mb-4">Showing posts with <mark>#${tag}</mark></h1>
+			${postsWithTag.map((post) => `
+			<article class="card mb-4">
+				<div class="post-slider text-center">
+					<img style="width:50%;"  src="images/post/${post.image}" alt="${post.title}" class="card-img-top">
+				</div>
+				<div class="card-body">
+					<h3 class="mb-3"><a alt="${post.title}" class="post-title" href="post-details.html?blogId=${post.id}" >${post.title}</a></h3>
+					<ul class="card-meta list-inline">
+					<li class="list-inline-item">
+						<a href="about-me.html" class="card-meta-author">
+						<img src="${data.author.photo}">
+                   <span>${data.author.shortName}</span>
+						</a>
+					</li>
+					<li class="list-inline-item">
+						<i class="ti-timer"></i>${post.readTime}
+					</li>
+					<li class="list-inline-item">
+						<i class="ti-calendar"></i>${post.date}
+					</li>
+					<li class="list-inline-item">
+						<ul class="card-meta-tag list-inline">
+						  ${post.tags.slice(0, 4).map((tag) =>
+			`<li class="list-inline-item"><a href="tags.html?tag=${tag.replace("#", "")}">${tag}</a></li>`
+		).join('')}
+						</ul>
+					</li>
+					</ul>
+					<p> ${post.content.substring(0, 100)}…</p>
+					 <a href="post-details.html?blogId=${post.id}" class="btn btn-outline-primary">Read More</a>
+				</div>
+				</article>
+				`)}
+				`;
 
 	}
+
+	const recentPostsoForWidget = data.posts.filter((post) => data.sections.recentPosts.includes(post.id));
+	document.getElementById("recent-post-widget").innerHTML = ` <h4 class="widget-title">Recent Post</h4>`
+	document.getElementById("recent-post-widget").innerHTML +=
+		`${recentPostsoForWidget.map((post) => `
+
+			<article class="widget-card">
+			<div class="d-flex">
+				<img class="card-img-sm" src="images/post/${post.image}" alt="${post.title}">
+				<div class="ml-3">
+				<h5><a class="post-title"  alt="${post.title}" href="post-details.html?blogId=${post.id}">${post.title}</a></h5>
+				<ul class="card-meta list-inline mb-0">
+					<li class="list-inline-item mb-0">
+					<i class="ti-calendar"></i>${post.date}
+					</li>
+				</ul>
+				</div>
+			</div>
+			</article>
+
+
+		`)}`;
+
+	document.getElementById("tag-widget").innerHTML = `
+	${data.tags.map((tag) =>
+		`<li class="list-inline-item"><a href="tags.html?tag=${tag.title.replace("#", "")}">${tag.title}</a></li>`
+	).join('')}
+	`;
 
 	document.getElementById("about-widget").innerHTML = `
 	    <h4 class="widget-title">Hi, I am ${data.author.shortName}!</h4>
@@ -753,6 +782,12 @@ function loadContent() {
 	`;
 
 	document.getElementById("social-links").innerHTML = `
+	 <li class="list-inline-item"><a target="_blank" href="${data.author.socialLinks.facebook}"><i class="ti-facebook"></i></a></li>
+      <li class="list-inline-item"><a target="_blank" href="${data.author.socialLinks.linkedin}"><i class="ti-linkedin"></i></a></li>
+      <li class="list-inline-item"><a target="_blank" href="${data.author.socialLinks.instgram}"><i class="ti-instagram"></i></a></li>
+      <li class="list-inline-item"><a target="_blank" href="${data.author.socialLinks.youtube}"><i class="ti-youtube"></i></a></li>
+	`;
+	document.getElementById("footer-social-links").innerHTML = `
 	 <li class="list-inline-item"><a target="_blank" href="${data.author.socialLinks.facebook}"><i class="ti-facebook"></i></a></li>
       <li class="list-inline-item"><a target="_blank" href="${data.author.socialLinks.linkedin}"><i class="ti-linkedin"></i></a></li>
       <li class="list-inline-item"><a target="_blank" href="${data.author.socialLinks.instgram}"><i class="ti-instagram"></i></a></li>
