@@ -1269,6 +1269,110 @@ var data = {
 	}
 }
 
+const sortedPosts = data.posts.reverse();
+const postsPerPage = 5;
+const totalPosts = sortedPosts.length;
+const totalPages = Math.ceil(totalPosts / postsPerPage);
+
+function getQueryParam(name) {
+	const urlParams = new URLSearchParams(window.location.search);
+	return urlParams.get(name);
+}
+
+function setQueryParam(name, value) {
+	const urlParams = new URLSearchParams(window.location.search);
+	urlParams.set(name, value);
+	window.history.replaceState(null, '', '?' + urlParams.toString());
+}
+
+
+function navigateToPage(pageNumber) {
+	if (pageNumber < 1 || pageNumber > totalPages) return;
+	setQueryParam('page', pageNumber);
+	renderContent();
+	document.getElementById("recent-posts").scrollIntoView({ behavior: 'smooth' });
+}
+
+function renderContent() {
+	const pageNumber = parseInt(getQueryParam('page')) || 1;
+	renderPostsForPage(pageNumber);
+	renderPagination(pageNumber);
+}
+
+// posts in home
+function renderPostsForPage(pageNumber) {
+	const startIndex = (pageNumber - 1) * postsPerPage;
+	const endIndex = startIndex + postsPerPage;
+	const postsToRender = sortedPosts.slice(startIndex, endIndex);
+
+	document.getElementById("recent-posts").innerHTML = `
+                <h2 class="h5 section-title">Recent Posts</h2>
+                ${postsToRender.map(post => `
+                    <article class="card mb-4">
+                        <div class="post-slider text-center">
+                            <img src="images/post/${post.image}" style="width:50%;" class="card-img-top" alt="${post.title}">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="mb-3"><a class="post-title" alt="${post.title}" href="post-details.html?blogId=${post.id}">${post.title}</a></h3>
+                            <ul class="card-meta list-inline">
+                                <li class="list-inline-item">
+                                    <a href="about-me.html" class="card-meta-author">
+                                        <img src="${data.author.photo}" alt="Photo of ${data.author.shortName}-${data.author.bio}">
+                                        <span>${data.author.shortName}</span>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <i class="ti-timer"></i>${post.readTime}
+                                </li>
+                                <li class="list-inline-item">
+                                    <i class="ti-calendar"></i>${post.date}
+                                </li>
+                                <li class="list-inline-item">
+                                    <ul class="card-meta-tag list-inline">
+                                        ${post.tags.slice(0, 4).map(tag =>
+		`<li class="list-inline-item"><a href="tags.html?tag=${tag.replace("#", "")}">${tag}</a></li>`
+	).join('')}
+                                    </ul>
+                                </li>
+                            </ul>
+                            <p>${post.content.substring(0, 250)}…</p>
+                            <a href="post-details.html?blogId=${post.id}" alt="${post.title}" class="btn btn-outline-primary">Read More</a>
+                        </div>
+                    </article>
+                `).join('')}
+            `;
+}
+
+function renderPagination(currentPage) {
+	let paginationHtml = '<ul class="pagination justify-content-center">';
+
+	// Previous page link
+	paginationHtml += `
+                <li class="page-item ${currentPage === 1 ? 'disabled' : ''}">
+                    <a  class="page-link" onclick="navigateToPage(${currentPage - 1})">&laquo;</a>
+                </li>
+            `;
+
+	// Page numbers
+	for (let i = 1; i <= totalPages; i++) {
+		paginationHtml += `
+                    <li class="page-item ${i === currentPage ? 'active' : ''}">
+                        <a  class="page-link" onclick="navigateToPage(${i})">${i}</a>
+                    </li>
+                `;
+	}
+
+	// Next page link
+	paginationHtml += `
+                <li class="page-item ${currentPage === totalPages ? 'disabled' : ''}">
+                    <a  class="page-link" onclick="navigateToPage(${currentPage + 1})">&raquo;</a>
+                </li>
+            </ul>`;
+
+	document.getElementById("pagination").innerHTML = paginationHtml;
+}
+// posts in home
+
 function loadContent() {
 	const currentPage = window.location.pathname.split("/").pop().split(".")[0];
 	const urlParams = new URLSearchParams(window.location.search);
@@ -1367,41 +1471,57 @@ function loadContent() {
             <a href="post-details.html?blogId=${popularPost.id}" class="btn btn-outline-primary">Read More</a>
           </div>
         </article>`;
-		document.getElementById("recent-posts").innerHTML = ` <h2 class="h5 section-title">Recent Post</h2>`;
-		document.getElementById("recent-posts").innerHTML +=
-			`
-		${data.posts.reverse().map((post) => `
-		    <article class="card mb-4">
-        <div class="post-slider text-center">
-            <img src="images/post/${post.image}" style="width:50%;" class="card-img-top" alt=${post.title}>
-        </div>
-        <div class="card-body">
-            <h3 class="mb-3"><a class="post-title" alt=${post.title} href="post-details.html?blogId=${post.id}">${post.title}</a></h3>
-            <ul class="card-meta list-inline">
-                <li class="list-inline-item">
-                    <a href="about-me.html" class="card-meta-author">
-                        <img src="${data.author.photo}" alt="Photo of ${data.author.shortName}-${data.author.bio}">
-                   <span>${data.author.shortName}</span>
-                    </a>
-                </li>
-                <li class="list-inline-item">
-                    <i class="ti-timer"></i>${post.readTime}
-                </li>
-                <li class="list-inline-item">
-                    <i class="ti-calendar"></i>${post.date}
-                </li>
-                <li class="list-inline-item">
-                    <ul class="card-meta-tag list-inline">
-                       ${post.tags.slice(0, 4).map((tag) =>
-				`<li class="list-inline-item"><a href="tags.html?tag=${tag.replace("#", "")}">${tag}</a></li>`
-			).join('')}
-                    </ul>
-                </li>
-            </ul>
-            <p>${post.content.substring(0, 250)}…</p>
-            <a href="post-details.html?blogId=${post.id}" alt=${post.title} class="btn btn-outline-primary">Read More</a>
-        </div>
-  		  </article>`).join('')}`;
+		// document.getElementById("recent-posts").innerHTML = ` <h2 class="h5 section-title">Recent Post</h2>`;
+		// document.getElementById("recent-posts").innerHTML +=
+		// 	`
+		// ${data.posts.reverse().map((post) => `
+		//     <article class="card mb-4">
+		// <div class="post-slider text-center">
+		//     <img src="images/post/${post.image}" style="width:50%;" class="card-img-top" alt=${post.title}>
+		// </div>
+		// <div class="card-body">
+		//     <h3 class="mb-3"><a class="post-title" alt=${post.title} href="post-details.html?blogId=${post.id}">${post.title}</a></h3>
+		//     <ul class="card-meta list-inline">
+		//         <li class="list-inline-item">
+		//             <a href="about-me.html" class="card-meta-author">
+		//                 <img src="${data.author.photo}" alt="Photo of ${data.author.shortName}-${data.author.bio}">
+		//            <span>${data.author.shortName}</span>
+		//             </a>
+		//         </li>
+		//         <li class="list-inline-item">
+		//             <i class="ti-timer"></i>${post.readTime}
+		//         </li>
+		//         <li class="list-inline-item">
+		//             <i class="ti-calendar"></i>${post.date}
+		//         </li>
+		//         <li class="list-inline-item">
+		//             <ul class="card-meta-tag list-inline">
+		//                ${post.tags.slice(0, 4).map((tag) =>
+		// 		`<li class="list-inline-item"><a href="tags.html?tag=${tag.replace("#", "")}">${tag}</a></li>`
+		// 	).join('')}
+		//             </ul>
+		//         </li>
+		//     </ul>
+		//     <p>${post.content.substring(0, 250)}…</p>
+		//     <a href="post-details.html?blogId=${post.id}" alt=${post.title} class="btn btn-outline-primary">Read More</a>
+		// </div>
+		//   </article>`).join('')}`;
+
+		// document.getElementById("recent-posts").innerHTML += `
+		// 	<ul class="pagination justify-content-center">
+		// 	<li class="page-item page-item active ">
+		// 		<a href="#!" class="page-link">1</a>
+		// 	</li>
+		// 	<li class="page-item">
+		// 		<a href="#!" class="page-link">2</a>
+		// 	</li>
+		// 	<li class="page-item">
+		// 		<a href="#!" class="page-link">&raquo;</a>
+		// 	</li>
+		// </ul>`;
+		renderContent();
+
+
 	} else if (currentPage === 'post-details') {
 		const blogId = urlParams.get('blogId');
 		const blogPost = data.posts.find((post) => post.id === blogId);
@@ -1440,9 +1560,7 @@ function loadContent() {
 		`;
 	} else if (currentPage === 'tags') {
 		const tag = urlParams.get('tag');
-		console.log(tag)
 		const postsWithTag = data.posts.filter((post) => post.tags.includes(`#${tag}`));
-		console.log(postsWithTag)
 		document.getElementById("posts-with-tags").innerHTML = `
 		 <h1 class="h2 mb-4">Showing posts with <mark>#${tag}</mark></h1>
 			${postsWithTag.map((post) => `
@@ -1477,16 +1595,13 @@ function loadContent() {
 					 <a href="post-details.html?blogId=${post.id}" class="btn btn-outline-primary">Read More</a>
 				</div>
 				</article>
-				`)}
+				`).join('')}
 				`;
-
 	}
-
-	const recentPostsForWidget = [data.posts[data.posts.length - 1]];
+	const recentPostsForWidget = [data.posts[0]];
 	document.getElementById("recent-post-widget").innerHTML = ` <h4 class="widget-title">Recent Post</h4>`
 	document.getElementById("recent-post-widget").innerHTML +=
 		`${recentPostsForWidget.map((post) => `
-
 			<article class="widget-card">
 			<div class="d-flex">
 				<img class="card-img-sm" src="images/post/${post.image}" alt="${post.title}">
@@ -1503,13 +1618,11 @@ function loadContent() {
 
 
 		`)}`;
-
 	document.getElementById("tag-widget").innerHTML = `
 	${data.tags.map((tag) =>
 		`<li class="list-inline-item"><a href="tags.html?tag=${tag.title.replace("#", "")}">${tag.title}</a></li>`
 	).join('')}
 	`;
-
 	document.getElementById("about-widget").innerHTML = `
 	    <h4 class="widget-title">Hi, I am ${data.author.shortName}!</h4>
     <img class="img-fluid" src="${data.author.photo}" alt="${data.author.shortName}-photo">
@@ -1522,7 +1635,6 @@ function loadContent() {
     </ul>
     <a href="about-me.html" alt="about sanjo mathew" class="btn btn-primary mb-2">About me</a>
 	`;
-
 	document.getElementById("social-links").innerHTML = `
 	 <li class="list-inline-item"><a target="_blank" href="${data.author.socialLinks.facebook}"><i class="ti-facebook"></i></a></li>
       <li class="list-inline-item"><a target="_blank" href="${data.author.socialLinks.linkedin}"><i class="ti-linkedin"></i></a></li>
