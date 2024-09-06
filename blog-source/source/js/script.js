@@ -130,7 +130,7 @@ var data = {
 	"author": {
 		"id": "sanjomathew",
 		"name": "Sanjo Cine Mathew",
-		"shortName": "Sanjo Mathew",
+		"shortName": "Sanjo",
 		"photo": "images/author.png",
 		"bio": "Counselling Psychologist, Skill Coach & Learning Facilitator",
 		"socialLinks": {
@@ -141,14 +141,15 @@ var data = {
 		}
 	},
 	"tags": [
-		{ "title": "#CrabMentality", "id": "1", "showInHome": true },
-		{ "title": "#RisingAboveTheTide", "id": "2", "showInHome": true },
-		{ "title": "#OvercomingNegativity", "id": "3", "showInHome": true },
-		{ "title": "#PositiveMindset", "id": "4", "showInHome": true },
-		{ "title": "#BreakTheCycle", "id": "5", "showInHome": true },
-		{ "title": "#SelfGrowth", "id": "6", "showInHome": false },
-		{ "title": "#SupportEachOther", "id": "7", "showInHome": true },
-		{ "title": "#Inspiration", "id": "8", "showInHome": false },
+		{ "title": "#success", "id": "1", "showInHome": true },
+		{ "title": "#positive_thinking", "id": "2", "showInHome": true },
+		{ "title": "#leadership", "id": "3", "showInHome": true },
+		{ "title": "#mind_power", "id": "4", "showInHome": true },
+		{ "title": "#life_mastery", "id": "5", "showInHome": true },
+		{ "title": "#life", "id": "6", "showInHome": false },
+		{ "title": "#life_quotes", "id": "7", "showInHome": true },
+		{ "title": "#positive_life", "id": "8", "showInHome": false },
+		{ "title": "#motivation", "id": "8", "showInHome": false },
 	],
 	"categories": {
 		"cat1": "",
@@ -163,25 +164,29 @@ var data = {
 			"subTitle": "Echoes of Wisdom - Inspired by Life",
 			"image": "crab-basket-mentality-sanjo-mathew-blog.jpg",
 			"authorId": "sanjomathew",
-			"date": "01 Jan, 2024",
+			"date": "01 Jan, 2023",
 			"readTime": "3 min to Read",
 			"tags": [
-				"#CrabMentality",
-				"#RisingAboveTheTide",
-				"#OvercomingNegativity",
-				"#Empowerment",
-				"#PositiveMindset",
-				"#BreakTheCycle",
-				"#SelfGrowth",
-				"#SupportEachOther",
-				"#CommunityOverCompetition",
-				"#CrabBasketLessons",
-				"#RiseTogether",
-				"#Inspiration",
-				"#MindsetMatters",
-				"#Inspiration",
-				"#Motivation",
-				"#Change",
+				"#crab_mentality",
+				"#positive_thinking",
+				"#success",
+				"#rising_above_the_tide",
+				"#overcoming_negativity",
+				"#empowerment",
+				"#positive_mindset",
+				"#break_the_cycle",
+				"#self_growth",
+				"#support_each_other",
+				"#sanjocinemathew",
+				"#community_over_competition",
+				"#crab_basket_lessons",
+				"#rise_together",
+				"#inspiration",
+				"#mindset_matters",
+				"#inspiration",
+				"#motivation",
+				"#change",
+				"#sanjo"
 			],
 			"content": `<p>During a beach stroll, a man encountered a captivating scene: a fisherman diligently collecting crabs in an open basket, surprisingly without a lid. Puzzled, the man questioned the fisherman about the absence of an escape attempt by the crabs. The fisherman, with a knowing smile, revealed a profound insight.</p>
 				<p>He explained that if one crab were alone, it might venture to escape. However, the collective mentality of the crabs played a pivotal role. In their shared confinement, each crab ensured that none would break free. They preferred a collective demise over individual escape.</p>
@@ -195,11 +200,33 @@ var data = {
 			"subTitle": "Echoes of Wisdom - Inspired by Life",
 			"image": "you-dont-have-to-be-born-skilful-to-be-extra-ordinary.jpg",
 			"authorId": "sanjomathew",
-			"date": "01 Jan, 2024",
+			"date": "01 Feb, 2023",
 			"readTime": "3 min to Read",
 			"tags": [
-				"#BeExtraordinary", "#SkillsAreLearned", "#UnlockYourPotential", "#BelieveInYourself", "#GrowthMindset", "#OrdinaryToExtraordinary", "#SuccessIsEarned", "#DreamBig", "#SelfImprovement", "#AchieveGreatness", "#HardWorkPaysOff", "#Inspiration", "#MotivationMonday", "#NeverGiveUp", "#inspiration", "#motivation", "#change"
+				"#be_extraordinary",
+				"#skills_are_learned",
+				"#unlock_your_potential",
+				"#believe_in_yourself",
+				"#growth_mindset",
+				"#ordinary_to_extraordinary",
+				"#sanjocinemathew",
+				"#success_is_earned",
+				"#dream_big",
+				"#self_improvement",
+				"#achieve_greatness",
+				"#hard_work_pays_off",
+				"#inspiration",
+				"#motivation_monday",
+				"#sanjo",
+				"#never_give_up",
+				"#inspiration",
+				"#motivation",
+				"#change",
+				"#positive_thinking",
+				"#positive_life",
+				"#life",
 			],
+
 			"content": `<p><b>A perspective from the skill of an Archerfish</b></p>
 				<p>The archerfish stands out as an intriguing and distinctive aquatic species, distinguished by its unique hunting behavior. The archerfish is not born with the full skill of spitting jets of water accurately to catch prey; instead, it learns and refines this behaviour over time through observation and practice.</p>
 				<p>Young archerfish typically learn how to spit water by imitating the older members of their group The archerfish's ability to shoot water jets with precision is a learned behaviour that improves with practice. It is the practice and experience that make them proficient marksmen. This learning process is crucial for their survival, as it enables them to effectively catch insects on overhanging vegetation above the water.</p>
@@ -217,10 +244,25 @@ var data = {
 			"subTitle": "Echoes of Wisdom - Inspired by Life",
 			"image": "dolphin-wisdom-navigating-life-s-waves-with-resilient-spirits-sanjo-mathew-motivational-blog.jpg",
 			"authorId": "sanjomathew",
-			"date": "01 Jan, 2024",
-			"readTime": "3 min to Read",
+			"date": "01 Mar, 2023",
+			"readTime": "4 min to Read",
 			"tags": [
-				"#ResilientSpirits", "#OceanInspiration", "#RideTheWaves", "#StayResilient", "#LifeLessons", "#WisdomOfTheSea", "#EmbraceTheJourney", "#OceanLife", "#InnerStrength", "#PositiveMindset", "#OvercomeChallenges", "#NatureInspires", "#inspiration", "#motivation", "#growthmindset"
+				"#resilient_spirits",
+				"#ocean_inspiration",
+				"#ride_the_waves",
+				"#stay_resilient",
+				"#life_lessons",
+				"#wisdom_of_the_sea",
+				"#embrace_the_journey",
+				"#ocean_life",
+				"#inner_strength",
+				"#positive_mindset",
+				"#overcome_challenges",
+				"#nature_inspires",
+				"#inspiration",
+				"#motivation",
+				"#growth_mindset",
+				"#positive_life",
 			],
 			"content": `<p><b>Adaptability in Turbulent Waters:</b></p>
 				<p>Dolphins, with their keen sense of adaptability, navigate changing ocean conditions with swiftness and ease. Humans, possessing capabilities beyond those of dolphins, should exhibit resilience to adapt to life's uncertainties. Learning from experiences and adjusting strategies when faced with challenges are essential facets of this adaptability.</p>
@@ -240,10 +282,31 @@ var data = {
 			"subTitle": "Echoes of Wisdom - Inspired by Life",
 			"image": "the-rhythmic-persistence-of-a-snail-a-skill-to-master-in-every-profession-sanjo-mathew-motivational-blog.jpg",
 			"authorId": "sanjomathew",
-			"date": "01 Jan, 2024",
+			"date": "01 Apr, 2023",
 			"readTime": "3 min to Read",
 			"tags": [
-				"#SnailWisdom", "#RhythmicPersistence", "#MasterYourSkills", "#SlowAndSteady", "#PatienceAndPersistence", "#ProfessionalGrowth", "#LifeLessons", "#EmbraceTheJourney", "#SkillMastery", "#ConsistencyIsKey", "#WorkHard", "#SuccessMindset", "#KeepPushing", "#CareerDevelopment", "#Persevere", "#InnerStrength", "#inspiration", "#motivation", "#growthmindset"
+				"#snail_wisdom",
+				"#positive_life",
+				"#rhythmic_persistence",
+				"#master_your_skills",
+				"#sanjo",
+				"#slow_and_steady",
+				"#patience_and_persistence",
+				"#professional_growth",
+				"#life_lessons",
+				"#embrace_the_journey",
+				"#skill_mastery",
+				"#consistency_is_key",
+				"#work_hard",
+				"#sanjocinemathew",
+				"#success_mindset",
+				"#keep_pushing",
+				"#career_development",
+				"#persevere",
+				"#inner_strength",
+				"#inspiration",
+				"#motivation",
+				"#growth_mindset",
 			],
 			"content": `<p><b>Adaptability in Turbulent Waters:</b></p>
 				<p>Dolphins, with their keen sense of adaptability, navigate changing ocean conditions with swiftness and ease. Humans, possessing capabilities beyond those of dolphins, should exhibit resilience to adapt to life's uncertainties. Learning from experiences and adjusting strategies when faced with challenges are essential facets of this adaptability.</p>
@@ -263,11 +326,33 @@ var data = {
 			"subTitle": "Echoes of Wisdom - Inspired by Life",
 			"image": "the-winning-streak-the-power-of-pushing-beyond-limits-sanjo-mathew-motivational-blog.jpg",
 			"authorId": "sanjomathew",
-			"date": "01 Jan, 2024",
+			"date": "15 May, 2023",
 			"readTime": "2 min to Read",
 			"tags": [
-				"#WinningStreak", "#PushBeyondLimits", "#PowerOfPersistence", "#BreakBarriers", "#Unstoppable", "#ChaseGreatness", "#GoTheExtraMile", "#NoLimits", "#SuccessMindset", "#AchievementUnlocked", "#StayDetermined", "#RiseAbove", "#Perseverance", "#DrivenToSucceed", "#WinningMindset", "#motivation", "#inspiration", "#success", "#challenge"
+				"#winning_streak",
+				"#push_beyond_limits",
+				"#power_of_persistence",
+				"#break_barriers",
+				"#unstoppable",
+				"#chase_greatness",
+				"#go_the_extra_mile",
+				"#no_limits",
+				"#success_mindset",
+				"#sanjocinemathew",
+				"#achievement_unlocked",
+				"#stay_determined",
+				"#rise_above",
+				"#perseverance",
+				"#driven_to_succeed",
+				"#winning_mindset",
+				"#motivation",
+				"#inspiration",
+				"#life",
+				"#sanjo",
+				"#success",
+				"#challenge"
 			],
+
 			"content": `<p>Entering a gym as an overweight individual was daunting. Each visit felt like a monumental effort, but with the guidance of my dedicated trainer, I began taking small, manageable steps that gradually led to significant progress. The most inspiring moment came when I noticed a group of gym members training for a mini-marathon. Marathons had always seemed out of reach, especially since I never considered myself an athlete.</p>
 				<p>However, when I was invited to participate in the upcoming race, I decided to take the plunge and register. Completing the 5 km race took me 55 minutes, and the aftermath left me with sore feet for a month. Despite the physical challenges, the feeling of receiving a finisher's medal was incredibly motivating. It spurred me to continue running, and I eagerly signed up for the next race, and then another.</p>
 				<p>This journey taught me that you don't have to start as an athlete to achieve great things. The key is to challenge your beliefs and push yourself beyond perceived limits. What once seemed impossible became a piece of cake once I overcame the mental barriers. The real question is, are you willing to push yourself to see what more you can accomplish? It's all in your mind&mdash;once you decide to try, you'll discover a world of possibilities.</p>`
@@ -278,10 +363,25 @@ var data = {
 			"subTitle": "Embrace Series",
 			"image": "embracing-adversity-choosing-your-response-sanjo-mathew-motivational-blog.jpg",
 			"authorId": "sanjomathew",
-			"date": "01 Jan, 2024",
-			"readTime": "3 min to Read",
+			"date": "05 Jun, 2023",
+			"readTime": "4 min to Read",
 			"tags": [
-				"#EmbraceChange", "#Embraceimperfection", "#AuthenticSelf", " #BeYou", " #RealLife", " #InspiringJourney", " #SelfLove", " #BeautifullyHuman", " #CelebrateDifferences", " #LifeUnfiltered", "#UniqueAndProud", "#psychologythoughts", "#life"
+				"#embrace_change",
+				"#embrace_imperfection",
+				"#authentic_self",
+				"#be_you",
+				"#real_life",
+				"#positive_thinking",
+				"#inspiring_journey",
+				"#self_love",
+				"#beautifully_human",
+				"#celebrate_differences",
+				"#life_unfiltered",
+				"#sanjo",
+				"#unique_and_proud",
+				"#psychology_thoughts",
+				"#life",
+				"#sanjocinemathew",
 			],
 			"content": `<p>Life is a series of challenges, and adversity is an inevitable part of the journey. When faced with difficult situations, our responses can be compared to the transformative processes of a potato, an egg, or coffee beans. Each metaphor symbolizes a unique approach to adversity, reflecting qualities of resilience, strength, or the ability to spread positivity.</p>
 			<p><b>The Potato Approach:</b><span>&nbsp;</span>Imagine yourself as a potato when adversity strikes. Potatoes become soft and malleable when exposed to heat or pressure. Similarly, embracing challenges with an open and adaptable mindset allows us to navigate difficulties with resilience. The potato teaches us that flexibility and a willingness to change can lead to personal growth and strength in the face of adversity.</p>
@@ -295,10 +395,23 @@ var data = {
 			"subTitle": "Embrace Series",
 			"image": "embrace-change-the-transformative-perspectives-sanjo-mathew-motivational-blog.jpg",
 			"authorId": "sanjomathew",
-			"date": "01 Jan, 2024",
-			"readTime": "3 min to Read",
+			"date": "01 Jul, 2023",
+			"readTime": "2 min to Read",
 			"tags": [
-				"#EmbraceChange", "#TransformationJourney", "#PsychologyThoughts", "#life", "#womenempowerment", "#stressrelief", "#happiness", "#changemanagement", "#Motivation", "#Resilience", "#Metamorphosis"
+				"#embrace_change",
+				"#transformation_journey",
+				"#psychology_thoughts",
+				"#life",
+				"#positive_thinking",
+				"#sanjocinemathew",
+				"#women_empowerment",
+				"#stress_relief",
+				"#happiness",
+				"#change_management",
+				"#motivation",
+				"#resilience",
+				"#metamorphosis",
+				"#sanjo",
 			],
 			"content": `<p>In the journey of life, change is the golden thread that shapes us in ways we never imagined. It challenges us to face our fears, let go of the familiar, and trust in the process of transformation.</p>
 			<p>Imagine a caterpillar inching along leaves, seeing only the ground and knowing nothing of the sky. It can't fathom the freedom of flight or the beauty beyond its current state. Yet, within this simple creature, a quiet revolution begins. The caterpillar enters a cocoon, undergoing a profound and painful transformation. It dissolves into a chaotic mix of potential, only to emerge as a butterfly, ready to embrace the sky.</p>
@@ -311,10 +424,25 @@ var data = {
 			"subTitle": "Embrace Series",
 			"image": "embracing-imperfection-the-power-of-authenticity-sanjo-mathew-motivational-blog.jpg",
 			"authorId": "sanjomathew",
-			"date": "01 Jan, 2024",
-			"readTime": "3 min to Read",
+			"date": "01 Aug, 2023",
+			"readTime": "2 min to Read",
 			"tags": [
-				"#EmbraceChange", "#Embraceimperfection", "#Perfectlyimperfect", "#AuthenticSelf", "#BeYou", "#RealLife", "#InspiringJourney", "#SelfLove", "#BeautifullyHuman", "#CelebrateDifferences", "#LifeUnfiltered", "#UniqueAndProud"
+				"#embrace_change",
+				"#embrace_imperfection",
+				"#perfectly_imperfect",
+				"#authentic_self",
+				"#be_you",
+				"#real_life",
+				"#inspiring_journey",
+				"#success",
+				"#self_love",
+				"#beautifully_human",
+				"#celebrate_differences",
+				"#sanjocinemathew",
+				"#life_unfiltered",
+				"#unique_and_proud",
+				"#life",
+				"#sanjo",
 			],
 			"content": `<p>In the vast and varied world of nature, there exists a creature that embodies the beauty of imperfection and the power of authenticity&mdash;the blobfish. This deep-sea dweller, often dubbed the "world's ugliest animal," has a gelatinous, formless appearance. The blobfish lives in the deep ocean, where the pressure is incredibly high. At these depths, most creatures have dense, muscular bodies to withstand the pressure. However, the blobfish has evolved differently. Its soft, gelatinous body, devoid of muscles and bones, is perfectly suited for its deep-sea habitat. The lack of density allows it to float just above the ocean floor, effortlessly conserving energy in an environment where food is scarce.</p>
 				<p>The blobfish's "ugliness" is not a flaw; it is a testament to the creature's unique adaptation and resilience. It doesn't conform to typical standards of beauty or functionality, yet it thrives in its niche. The blobfish's existence challenges us to rethink our perceptions of beauty, worth, and success. It teaches us that true beauty lies not in conforming to societal norms but in embracing our unique qualities and strengths.</p>
@@ -326,10 +454,21 @@ var data = {
 			"subTitle": "Embrace Series",
 			"image": "embracing-uncertainty-learn-to-soar-like-an-albatross-sanjo-mathew-motivational-blog.jpg",
 			"authorId": "sanjomathew",
-			"date": "01 Jan, 2024",
-			"readTime": "3 min to Read",
+			"date": "05 Sept, 2023",
+			"readTime": "1 min to Read",
 			"tags": [
-				"#EmbraceChange", "#happiness", "#life", "#friends", "#positivevibes", "#education", "#PsychologyThoughts", "#positivity", "#positivethinking"
+				"#embrace_change",
+				"#happiness",
+				"#life",
+				"#friends",
+				"#sanjo",
+				"#positive_vibes",
+				"#success",
+				"#education",
+				"#psychology_thoughts",
+				"#positivity",
+				"#positive_thinking",
+				"#sanjocinemathew",
 			],
 			"content": `<p>The albatross is a magnificent seabird, known for navigating vast, open oceans, often flying thousands of miles over unpredictable and harsh seas. With wingspans up to 11 feet, these birds glide effortlessly over the waves, spending months at sea without land in sight. The ocean's ever-changing environment, with its sudden weather shifts, doesn't stop the albatross. Instead, it thrives, embracing uncertainty and trusting in its instincts to navigate the vast and often turbulent waters.</p>
 				<p>This majestic bird's life is a testament to adaptability and resilience, proving that facing uncertainty head-on can lead to incredible journeys and discoveries. Like the albatross, we can embrace uncertainty by trusting in our abilities and staying open to the unknown. By doing so, we learn to navigate life's unpredictable winds, finding strength and freedom in the journey. The albatross teaches us that, while the future may be uncertain, embracing it with grace and confidence allows us to soar to new heights.</p>`
@@ -340,10 +479,21 @@ var data = {
 			"subTitle": "Embrace Series",
 			"image": "embrace-lifes-transitions-learning-from-the-oyster-sanjo-mathew-motivational-blog.jpg",
 			"authorId": "sanjomathew",
-			"date": "01 Jan, 2024",
-			"readTime": "3 min to Read",
+			"date": "18 Oct, 2023",
+			"readTime": "2 min to Read",
 			"tags": [
-				"#EmbraceChange", "#happiness", "#life", "#friends", "#positivevibes", "#education", "#PsychologyThoughts", "#positivity", "#positivethinking"
+				"#embrace_change",
+				"#happiness",
+				"#life",
+				"#friends",
+				"#positive_vibes",
+				"#education",
+				"#sanjocinemathew",
+				"#psychology_thoughts",
+				"#motivation",
+				"#positivity",
+				"#positive_thinking",
+				"#sanjo",
 			],
 			"content": `<p>The oyster, despite its simple appearance, undergoes significant transformations, adapting to its environment and even turning irritants into pearls.</p>
 				<ol>
@@ -359,10 +509,19 @@ var data = {
 			"subTitle": "Embrace Series",
 			"image": "embracing-diversity-learning-from-the-octopus-sanjo-mathew-motivational-blog.jpg",
 			"authorId": "sanjomathew",
-			"date": "01 Jan, 2024",
+			"date": "01 Nov, 2023",
 			"readTime": "3 min to Read",
 			"tags": [
-				"#EmbraceChange", "#lifequotes", "#life", "#psychologythoughts", "#positivity", "#happiness", "#education"
+				"#embrace_change",
+				"#life_quotes",
+				"#life",
+				"#sanjocinemathew",
+				"#psychology_thoughts",
+				"#positivity",
+				"#happiness",
+				"#education",
+				"#positive_thinking",
+				"#sanjo",
 			],
 			"content": `<p>The octopus, one of the most intelligent and adaptable creatures in the ocean, offers a powerful analogy for embracing diversity. With its remarkable ability to change colour, texture, and even shape, the octopus thrives in a wide range of environments by adapting to its surroundings.</p>
 				<ol>
@@ -378,10 +537,22 @@ var data = {
 			"subTitle": "Embrace Series",
 			"image": "embracing-self-love-a-learning-from-the-sea-otter-sanjo-mathew-motivational-blog.jpg",
 			"authorId": "sanjomathew",
-			"date": "01 Jan, 2024",
+			"date": "20 Dec, 2023",
 			"readTime": "3 min to Read",
 			"tags": [
-				"#SelfLove", "#psychologythoughts", "#EmbraceChange", "#happiness", "#life", "#friends", "#positivevibes", "#education", "#PsychologyThoughts", "#positivity", "#positivethinking"
+				"#self_love",
+				"#psychology_thoughts",
+				"#embrace_change",
+				"#happiness",
+				"#life",
+				"#friends",
+				"#sanjo",
+				"#positive_vibes",
+				"#education",
+				"#psychology_thoughts",
+				"#positivity",
+				"#sanjocinemathew",
+				"#positive_thinking"
 			],
 			"content": `<h3><span style="font-size: 12.0pt; font-weight: normal;">In the vast, cold waters of the Pacific Ocean, where temperatures often plunge to bone-chilling levels, the sea otter thrives not just by instinct but by embodying a delicate balance of self-care and connection. This seemingly simple creature, with its playful demeanour and endearing habits, offers profound lessons on the importance of self-love&mdash;lessons that resonate deeply with our own journey toward inner peace and happiness.<o:p></o:p></span></h3>
 				<h4><span >The Power of Self-Care<o:p></o:p></span></h4>
@@ -401,9 +572,26 @@ var data = {
 			"image": "courageous-beginnings-success-isnt-a-destination-its-the-courage-to-start-the-journey-sanjo-mathew-motivational-blog.jpg",
 			"authorId": "sanjomathew",
 			"date": "01 Jan, 2024",
-			"readTime": "3 min to Read",
+			"readTime": "2 min to Read",
 			"tags": [
-				"#RedefineSuccess", "#CourageousBeginnings", "#StartWithCourage", "#NewBeginnings", "#BoldMoves", "#SuccessRedefined", "#EmbraceChange", "#BraveSteps", "#FearlessJourney", "#CourageToBegin", "#SuccessMindset", "#RiseAboveFear", "#DareToStart", "#TransformYourLife", "#CourageAndConfidence"
+				"#redefine_success",
+				"#courageous_beginnings",
+				"#start_with_courage",
+				"#new_beginnings",
+				"#bold_moves",
+				"#sanjocinemathew",
+				"#success_redefined",
+				"#embrace_change",
+				"#brave_steps",
+				"#motivation",
+				"#fearless_journey",
+				"#courage_to_begin",
+				"#success_mindset",
+				"#rise_above_fear",
+				"#dare_to_start",
+				"#sanjo",
+				"#transform_your_life",
+				"#courage_and_confidence"
 			],
 			"content": `In a world obsessed with outcomes, it’s easy to forget that success is not merely a destination; it’s the courage to embark on a journey, often filled with uncertainty. Every great achievement begins with a first step, and it is that step—the decision to start—that defines the true spirit of success.
 				Consider the story of J.K. Rowling, who faced rejection from 12 publishers before the Harry Potter series found its home at Bloomsbury. It wasn’t the global phenomenon that defines her success, but rather the courage to keep writing, submitting, and believing in her work. Her journey exemplifies the resilience needed to embrace the unknown and push through the fear of failure.
@@ -418,10 +606,25 @@ var data = {
 			"subTitle": "Redefining Success Series",
 			"image": "success-is-finding-joy-in-the-process-not-just-the-outcomey-sanjo-mathew-motivational-blog.jpg",
 			"authorId": "sanjomathew",
-			"date": "01 Jan, 2024",
+			"date": "30 Jan, 2024",
 			"readTime": "3 min to Read",
 			"tags": [
-				"#TransformYourLife", "#SuccessMinds", "#CourageAndConfidence", "#Resilience", "#dedication", "#GrowthMindset", "#NeverGiveUp", "#Inspiration", "#motivation", "#PursueYourPassion", "#Leadership", "#ProfessionalGrowth", "#EmbraceTheChallenge"
+				"#transform_your_life",
+				"#success_minds",
+				"#courage_and_confidence",
+				"#resilience",
+				"#sanjo",
+				"#dedication",
+				"#growth_mindset",
+				"#never_give_up",
+				"#life",
+				"#inspiration",
+				"#motivation",
+				"#pursue_your_passion",
+				"#leadership",
+				"#professional_growth",
+				"#sanjocinemathew",
+				"#embrace_the_challenge"
 			],
 			"content": `<p>Success is often perceived as the final outcome, but in reality, it is a continuous process defined by dedication, resilience, and the ability to find fulfilment in the journey itself.</p>
 			<p>Consider Michael Jordan, one of the most celebrated athletes in sports history. Early in his life, Jordan faced repeated rejections due to his short height. As he developed into a formidable basketball player, he encountered further challenges&mdash;missing over nine thousand shots and losing more than three hundred games. However, it was his relentless commitment to the process, coupled with an unyielding drive to improve, that ultimately paved his way to greatness. Jordan&rsquo;s success was not solely about winning; it was about his ability to learn from every setback and persist through every challenge.</p>
@@ -436,11 +639,36 @@ var data = {
 			"subTitle": "Redefining Success Series",
 			"image": "success-is-living-authentically-true-to-who-you-are-sanjo-mathew-motivational-blog.jpg",
 			"authorId": "sanjomathew",
-			"date": "01 Jan, 2024",
+			"date": "02 Feb, 2024",
 			"readTime": "3 min to Read",
 			"tags": [
-				"#BeYou", "#Resilience", "#Authenticity", "#Inspiration", "#SelfGrowth", "#AuthenticSuccess", "#liveyourtruth💯", "#SuccessMindset", "#TrueSuccess", "#dedication", "#Empowerment", "#GrowthMindset", "#NeverGiveUp", "#Inspiration", "#motivation", "#PursueYourPassion", "#Leadership", "#PurposeDriven", "#ProfessionalGrowth", "#EmbraceTheChallenge", "#SuccessMinds", "#LiveAuthentically"
-			],
+				"#be_you",
+				"#resilience",
+				"#authenticity",
+				"#inspiration",
+				"#self_growth",
+				"#authentic_success",
+				"#liveyourtruth💯",
+				"#success_mindset",
+				"#true_success",
+				"#dedication",
+				"#life",
+				"#empowerment",
+				"#growth_mindset",
+				"#sanjo",
+				"#never_give_up",
+				"#inspiration",
+				"#motivation",
+				"#pursue_your_passion",
+				"#leadership",
+				"#purpose_driven",
+				"#professional_growth",
+				"#embrace_the_challenge",
+				"#success_minds",
+				"#sanjocinemathew",
+				"#live_authentically"
+			]
+			,
 			"content": `<p>In today&rsquo;s fast-paced world, where success is often measured by external achievements&mdash;titles, wealth, or social status&mdash;it&rsquo;s easy to lose sight of what truly matters: living authentically. True success isn&rsquo;t just about reaching the top; it&rsquo;s about staying true to who you are, no matter where life takes you.<o:p></o:p></p>
 				<h4><span lang="EN-US">The Pressure to Conform<o:p></o:p></span></h4>
 				<p>We live in a society that constantly pushes us to conform to predefined standards of success. From an early age, we&rsquo;re taught that success looks a certain way&mdash;graduate from a prestigious university, land a high-paying job, climb the corporate ladder. While these milestones are admirable, they aren&rsquo;t the only markers of success.<o:p></o:p></p>
@@ -460,10 +688,27 @@ var data = {
 			"subTitle": "Redefining Success Series",
 			"image": "freedom-mindset-true-freedom-and-success-bloom-from-hope,-exploration,-and-curiosity.jpg",
 			"authorId": "sanjomathew",
-			"date": "01 Jan, 2024",
-			"readTime": "2 min to Read",
+			"date": "15 Aug, 2024",
+			"readTime": "3 min to Read",
 			"tags": [
-				"#FreedomAndSuccess", "#CuriosityUnleashed", "#ExploreYourself", "#HopefulLiving", "#EmbraceTheJourney", "#AuthenticSuccess", "#StayCurious", "#LiveWithPurpose", "#WanderAndGrow", "#Inspiration", "#GrowthMindset", "#AdventureAwaits", "#DreamChaser", "#MindfulLiving", "#ExploreToGrow"
+				"#freedom_and_success",
+				"#curiosity_unleashed",
+				"#explore_yourself",
+				"#hopeful_living",
+				"#embrace_the_journey",
+				"#authentic_success",
+				"#stay_curious",
+				"#live_with_purpose",
+				"#wander_and_grow",
+				"#success",
+				"#inspiration",
+				"#sanjocinemathew",
+				"#growth_mindset",
+				"#adventure_awaits",
+				"#dream_chaser",
+				"#mindful_living",
+				"#sanjo",
+				"#explore_to_grow"
 			],
 			"content": `<p>In the realm of professional and personal growth, the concept of success transcends mere achievements. True success is deeply intertwined with a mindset of freedom, driven by hope, exploration, and curiosity. This perspective can transform our approach to challenges and opportunities, offering profound insights from history&rsquo;s most influential leaders.</p>
 				<p>Mahatma Gandhi&rsquo;s leadership in the Indian independence movement exemplified how a freedom-oriented mindset can drive monumental change. Gandhi&rsquo;s unwavering hope for a free India and his commitment to nonviolent resistance showcased the power of curiosity and exploration in addressing complex social issues. His ability to envision a united nation, despite tremendous adversity, redefined not only the future of India but also the global understanding of leadership and resilience.</p>
@@ -477,10 +722,25 @@ var data = {
 			"subTitle": "Redefining Success Series",
 			"image": "dream-clarity-the-foundation-of-success-sanjo-mathew-motivational-blog.jpg",
 			"authorId": "sanjomathew",
-			"date": "01 Jan, 2024",
-			"readTime": "2 min to Read",
+			"date": "15 Mar, 2024",
+			"readTime": "1 min to Read",
 			"tags": [
-				"#DreamClarity", "#VisionAndPurpose", "#ChaseYourDreams", "#ClearVision", "#FocusedGoals", "#ManifestYourDreams", "#PurposeDrivenLife", "#AlignWithYourDreams", "#DreamBigActBold", "#SuccessMindset", "#ClarityIsKey", "#AchieveYourGoals", "#LiveYourVision"
+				"#dream_clarity",
+				"#vision_and_purpose",
+				"#chase_your_dreams",
+				"#clear_vision",
+				"#sanjocinemathew",
+				"#focused_goals",
+				"#manifest_your_dreams",
+				"#purpose_driven_life",
+				"#align_with_your_dreams",
+				"#dream_big_act_bold",
+				"#sanjo",
+				"#life",
+				"#success_mindset",
+				"#clarity_is_key",
+				"#achieve_your_goals",
+				"#live_your_vision"
 			],
 			"content": `<p><strong>Success begins with a dream, but it&rsquo;s the clarity of that dream that turns it into reality</strong></p>
 				<p>Without clear goals, even the most passionate pursuits can become unfocused and scattered. Dream clarity allows you to see not just the destination, but also the path to get there.</p>
@@ -495,11 +755,23 @@ var data = {
 			"subTitle": "Redefining Success Series",
 			"image": "balance-and-boundaries-sanjo-mathew-motivational-blog.jpg",
 			"authorId": "sanjomathew",
-			"date": "01 Jan, 2024",
-			"readTime": "2 min to Read",
+			"date": "24 Apr, 2024",
+			"readTime": "3 min to Read",
 			"tags": [
-				"#BalanceAndBoundaries", "#EmpoweredLiving", "#WellnessAndSuccess", "#ThriveNotSurvive", "#SuccessMindset", "#BoundariesMatter", "#SustainableSuccess", "#WellBeingFirst", "#LiveAuthentically", "#FlourishWithBalance"
-
+				"#balance_and_boundaries",
+				"#empowered_living",
+				"#wellness_and_success",
+				"#thrive_not_survive",
+				"#positive_thinking",
+				"#life",
+				"#success_mindset",
+				"#boundaries_matter",
+				"#sustainable_success",
+				"#well_being_first",
+				"#live_authentically",
+				"#flourish_with_balance",
+				"#sanjo",
+				"#sanjocinemathew"
 			],
 			"content": `<p><strong>True Success Flourishes with Balance and Empowered Boundaries</strong></p>
 				<p>In a world that glorifies hustle, true success comes from balance and empowered boundaries. Without balance, burnout is inevitable; without boundaries, success can cost your well-being and relationships. Empowered boundaries are intentional limits that protect your time, energy, and mental health. They allow you to thrive, maintain control, and align your personal and professional lives with your core values. These boundaries stem from strength and self-awareness, ensuring sustainable success without sacrificing what matters most.</p>
@@ -507,6 +779,476 @@ var data = {
 				<p>Sheryl Sandberg, COO of Facebook, has openly discussed the importance of setting boundaries in her professional life. Despite her demanding role, she makes it a point to leave the office by 5:30 PM to have dinner with her children. This boundary not only protects her family time but reinforces her belief that personal well-being is essential for sustainable success.</p>
 				<p>On a smaller scale, freelancers and entrepreneurs often struggle with work-life balance. Many succeed only after learning to say "no" to unmanageable workloads or clients who don't align with their values. By setting boundaries, they protect their energy and focus, ensuring they can deliver their best work without sacrificing personal well-being.</p>
 				<p>Success isn&rsquo;t about running yourself into the ground. It&rsquo;s about thriving&mdash;flourishing in your career while maintaining a healthy balance and the power to set boundaries that honour your personal values and needs.<strong> &ldquo;Flourish by Balancing Ambition with Empowered Boundaries"</strong></p>`
+		},
+		{
+			"id": "unbeatable-spirit-sanjo-mathew-motivational-blog",
+			"title": "Unbeatable Spirit",
+			"subTitle": "Redefining Success Series - Success is fueled by an unbeatable spirit—the relentless drive to rise, persevere, and conquer, no matter the odds",
+			"image": "unbeatable-spirit-sanjo-mathew-motivational-blog.jpg",
+			"authorId": "sanjomathew",
+			"date": "15 May, 2024",
+			"readTime": "3 min to Read",
+			"tags": [
+				"#unbeatable_spirit",
+				"#redefine_success",
+				"#resilience",
+				"#perseverance",
+				"#trudy_ederle",
+				"#success_mindset",
+				"#inspiration",
+				"#overcoming_obstacles",
+				"#leadership",
+				"#life",
+				"#motivation",
+				"#growth_mindset",
+				"#transformation",
+				"#never_give_up",
+				"#inspiration",
+				"#success",
+				"#positive_thoughts",
+				"#sanjo",
+				"#sanjocinemathew"
+			],
+			"content": `<p>In today&rsquo;s fast-paced world, success is often measured by outcomes&mdash;titles, accolades, and financial gains. But true success runs deeper. It&rsquo;s not about what you achieve, but the spirit that drives you to persevere, especially when the odds seem insurmountable. One real-life story that epitomizes this is Trudy Ederle, the first woman to swim across the English Channel in 1926.</p>
+			<p>Ederle's journey wasn&rsquo;t smooth sailing. She attempted the swim a year earlier but was forced to quit due to exhaustion. Undeterred by failure, she returned stronger, trained harder, and adapted her technique. Battling harsh currents and icy waters, she completed the swim in 14 hours and 34 minutes, not only conquering the Channel but shattering the existing men's record by two hours. Her story is one of an unbeatable spirit, a testament to the mindset that separates those who merely dream from those who achieve.</p>
+			<p>Many figures in the world of sports and business embody this relentless drive. Serena Williams, who battled injury and personal challenges to remain a tennis icon, or Howard Schultz, who transformed Starbucks from a small coffee chain into a global powerhouse despite early setbacks and rejection, both demonstrate that it&rsquo;s not the obstacles that define us, but our response to them. Similarly, Indra Nooyi, the former CEO of PepsiCo, broke barriers in the corporate world while advocating for diversity and championing innovation, proving that an unbeatable spirit leads to enduring success.</p>
+			<p>In any field, the unbeatable spirit is the catalyst for innovation and progress. It&rsquo;s what turns obstacles into stepping stones and failures into fuel for growth. Success is not about reaching the summit, but about the relentless pursuit that propels you forward, no matter the odds.</p>
+			<p>As professionals let&rsquo;s redefine success&mdash;celebrate resilience, the spirit to keep going, and the tenacity that leads to transformation.</p>`
+		},
+		{
+			"id": "mindful-breathing-the-power-of-mindful-breathing-lessons-from-nature-sanjo-mathew-motivational-blog",
+			"title": "Mindful Breathing",
+			"subTitle": "Mindfulness Journey #1",
+			"image": "mindful-breathing-the-power-of-mindful-breathing-lessons-from-nature-sanjo-mathew-motivational-blog.jpg",
+			"authorId": "sanjomathew",
+			"date": "05 Jun, 2024",
+			"readTime": "3 min to Read",
+			"tags": [
+				"#mindful_breath",
+				"#peace_in_the_moment",
+				"#find_your_calm",
+				"#breathe_with_intention",
+				"#inner_peace",
+				"#mindfulness_matters",
+				"#calm_in_chaos",
+				"#sanjo",
+				"#present_moment_awareness",
+				"#self_care_daily",
+				"#serenity_within",
+				"#mindful_living",
+				"#sanjocinemathew"
+			],
+			"content": `<p style="text-align: justify; line-height: 150%;"><strong>The Power of Mindful Breathing: Lessons from Nature</strong><o:p></o:p></p>
+			<p style="text-align: justify; line-height: 150%;">In today&rsquo;s fast-paced world, we often overlook the simplest yet most effective tool for managing stress and enhancing focus&mdash;our breath. Mindful breathing, a practice rooted in mindfulness, allows us to ground ourselves in the present moment, promoting clarity and emotional balance. By focusing on the rhythm of our breath, we can reduce anxiety, improve mental clarity, and enhance overall well-being.<o:p></o:p></p>
+			<p style="text-align: justify; line-height: 150%;"><strong>Health Benefits of Mindful Breathing</strong><o:p></o:p></p>
+			<p style="text-align: justify; line-height: 150%;">Mindful breathing offers numerous health benefits, both physical and psychological. Studies have shown that practicing mindful breathing can lower blood pressure, reduce cortisol levels and improve heart rate variability. Regular practice can also boost immune function, aid in digestion, and even improve sleep quality. Psychologically, mindful breathing reduces symptoms of anxiety, depression, and emotional overwhelm by promoting a sense of calm and stability.<o:p></o:p></p>
+			<p style="text-align: justify; line-height: 150%;"><strong>Practical Applications</strong><o:p></o:p></p>
+			<p style="text-align: justify; line-height: 150%;">Mindful breathing is a powerful tool in various fields. In leadership, it helps executives remain composed during high-stress decision-making. For athletes, it regulates performance anxiety and maintains endurance. Even in everyday life, mindful breathing can help us pause, reflect, and reset, preventing emotional outbursts and fostering clearer thinking.<o:p></o:p></p>
+			<p style="text-align: justify; line-height: 150%;"><strong>Nature&rsquo;s Wisdom</strong><o:p></o:p></p>
+			<p style="text-align: justify; line-height: 150%;">We can look to nature for inspiration on the benefits of mindful breathing. Consider the tortoise, an animal known for its long life and slow, deliberate breath. A tortoise's breathing pattern is an analogy for mindful living&mdash;slow, intentional, and steady. The longevity and calm nature of the tortoise remind us that taking control of our breath can have profound effects on our physical and emotional health.<o:p></o:p></p>
+			<p style="text-align: justify; line-height: 150%;">Plants, too, offer an insightful analogy. Trees, through the process of photosynthesis, exchange gases with their environment, much like how mindful breathing allows us to release tension and absorb calm. Just as trees need consistent oxygen and sunlight to thrive, we need regular mindful breathing practices to maintain our emotional equilibrium.<o:p></o:p></p>
+			<p style="text-align: justify; line-height: 150%;">Incorporating mindful breathing into your daily routine enhances your health, well-being, and performance in all aspects of life.<o:p></o:p></p>`
+		},
+		{
+			"id": "the-power-of-mindful-moments-embracing-stillness-in-a-chaotic-world-sanjo-mathew-motivational-blog",
+			"title": "Mindful Moments",
+			"subTitle": "Mindfulness Journey #2",
+			"image": "the-power-of-mindful-moments-embracing-stillness-in-a-chaotic-world-sanjo-mathew-motivational-blog.jpg",
+			"authorId": "sanjomathew",
+			"date": "30 Jun, 2024",
+			"readTime": "4 min to Read",
+			"tags": [
+				"#mindful_moments",
+				"#power_of_stillness",
+				"#inner_calm",
+				"#find_your_peace",
+				"#breathe_and_be",
+				"#clarity_in_chaos",
+				"#sanjo",
+				"#mindfulness_matters",
+				"#present_moment_awareness",
+				"#stillness_within",
+				"#live_with_intention",
+				"#mindful_living",
+				"#sanjocinemathew"
+			],
+			"content": ` 
+			<p><b>Mindful Moments</b> </p>
+			<p>Stillness
+			is where the mind finds rest, and in each mindful moment, peace quietly
+			unfolds.</p>
+
+			<p class="MsoNormal"><b><span>The
+			Power of Mindful Moments: Embracing Stillness in a Chaotic World</span></b><span></span></p>
+
+			<p class="MsoNormal"><span>In
+			today’s fast-paced world, stillness can feel elusive. However, moments of
+			mindful stillness offer an opportunity for deep reflection, mental clarity, and
+			emotional balance. From a psychological and philosophical standpoint,
+			cultivating stillness is more than just pausing—it’s a deliberate practice of
+			being present and fully aware of the moment.</span></p>
+
+			<p class="MsoNormal"><b><span>Psychological
+			Benefits of Stillness</span></b><span><br>
+			Psychologically, mindful moments of stillness reduce stress, enhance emotional
+			regulation, and foster resilience. Research shows that mindfulness practices,
+			including stillness, activate the parasympathetic nervous system, which lowers
+			cortisol levels, reduces anxiety, and promotes relaxation. This practice helps
+			create a buffer against the constant overstimulation of daily life, offering a
+			path to mental clarity and focus.</span></p>
+
+			<p class="MsoNormal"><b><span>Philosophical
+			Perspective on Stillness</span></b><span><br>
+			Philosophers have long explored the concept of stillness. Ancient Stoic
+			thinkers, such as Marcus Aurelius, viewed stillness as a key to mastering one’s
+			inner world. According to Stoicism, we cannot control external events, but we
+			can control our reactions. Stillness allows us to cultivate this internal
+			mastery, giving us the strength to face challenges with calm and composure.</span></p>
+
+			<p class="MsoNormal"><b><span>Analogies
+			from Nature and Real-Life Examples</span></b><span><br>
+			Nature offers a perfect analogy for stillness. Consider a calm lake—beneath its
+			surface lies immense depth, but it remains undisturbed and peaceful. In our
+			lives, stillness acts similarly, allowing us to remain grounded amid external
+			chaos.</span></p>
+
+			<p class="MsoNormal"><span>In
+			real life, many leaders and athletes use moments of stillness to make critical
+			decisions. Steve Jobs was known for practicing mindfulness and using it to fuel
+			his creativity and clarity in decision-making. By finding these mindful
+			moments, we create the space needed for innovation, emotional resilience, and
+			enhanced focus.</span></p>
+
+			<p class="MsoNormal"><span>Incorporating
+			mindful moments of stillness into our lives is not only beneficial for mental
+			and emotional health, but also fosters deeper self-awareness and a more
+			grounded approach to life.</span></p>
+					<p></p>
+    `,
+		},
+		{
+			"id": "embrace-mindful-routines-for-extraordinary-transformation-sanjo-mathew-motivational-blog",
+			"title": "Embrace Mindful Routines for Extraordinary Transformation",
+			"subTitle": "Mindfulness Journey #3",
+			"image": "embrace-mindful-routines-for-extraordinary-transformation-sanjo-mathew-motivational-blog.jpg",
+			"authorId": "sanjomathew",
+			"date": "01 Jul, 2024",
+			"readTime": "3 min to Read",
+			"tags": [
+				"#mindful_living",
+				"#mindful_routine",
+				"#purposeful_life",
+				"#transform_your_life",
+				"#mindfulness_matters",
+				"#live_with_intention",
+				"#stoicism",
+				"#sanjo",
+				"#buddhist_wisdom",
+				"#inner_peace",
+				"#daily_mindfulness",
+				"#spiritual_growth",
+				"#sanjocinemathew"
+			],
+			"content": ` 
+				<p class="MsoNormal"><span>In
+				today's fast-paced world, mindful routines offer a grounding force that can
+				transform our lives. Drawing from psychology, philosophy, and spiritual
+				teachings, mindfulness isn't just about quieting the mind—it's about living
+				with purpose and clarity.</span></p><p class="MsoNormal"><span>Consider
+				the animal kingdom. Like a lion patiently stalking its prey, mindfulness
+				teaches us to approach life with deliberate focus. Lions don’t rush; they
+				observe, wait, and then act with precision. Similarly, by practicing
+				mindfulness in our routines, we learn to navigate life with calmness and
+				intention, making decisions that reflect our true values rather than reactive
+				impulses.</span><br></p><p class="MsoNormal"><span>&nbsp;</span><span>Plants,
+				too, offer a powerful analogy. A tree grows steadily, rooted in the earth,
+				adapting to the seasons without resistance. In Stoicism, this mirrors the idea
+				of accepting what we cannot control while focusing on what we can—our actions
+				and reactions. Mindful routines, like a tree’s steady growth, help us stay
+				rooted in our principles, adapting to life’s changes without losing our sense
+				of self.</span></p><p class="MsoNormal"><span>&nbsp;</span><span>In
+				Buddhism, mindfulness is at the heart of the practice—being present in each
+				moment to free ourselves from unnecessary suffering. Just as a monk dedicates
+				time to meditation and reflection, we can dedicate time to mindful routines
+				that foster inner peace and awareness. These routines remind us that life is
+				not just about achieving goals but about how we live each day.</span></p><p class="MsoNormal"><span>&nbsp;</span><span>Religions
+				and spiritual ideologies often emphasize the power of rituals. Whether it’s
+				daily prayer, meditation, or acts of kindness, these routines connect us to
+				something greater than ourselves. They ground us, providing a sense of purpose
+				and belonging.</span></p><p class="MsoNormal"><span>&nbsp;</span><span>In
+				my experience, incorporating mindfulness into daily routines has been
+				transformative. Like the lion, the tree, or the monk, I’ve found that slowing
+				down, focusing, and being present have led to greater clarity, peace, and
+				purpose.</span></p><p class="MsoNormal"><span>&nbsp;</span><span>Mindful
+				routines aren't just about productivity—they're about living a life aligned
+				with who we truly are. By embracing them, we can transform the ordinary into
+				the extraordinary.</span></p>
+				<p></p>
+    
+    `,
+		},
+		{
+			"id": "the-art-of-mindful-listening-cultivating-deeper-connections-sanjo-mathew-motivational-blog",
+			"title": "The Art of Mindful Listening: Cultivating Deeper Connections",
+			"subTitle": "Mindfulness Journey #4",
+			"image": "the-art-of-mindful-listening-cultivating-deeper-connections-sanjo-mathew-motivational-blog.jpg",
+			"authorId": "sanjomathew",
+			"date": "01 Jul, 2024",
+			"readTime": "3 min to Read",
+			"tags": [
+				"#mindful_listening",
+				"#listen_with_purpose",
+				"#focus_and_presence",
+				"#inner_calm",
+				"#empathy_in_action",
+				"#connection_matters",
+				"#sanjo",
+				"#eagle_mindset",
+				"#mindful_moments",
+				"#true_understanding",
+				"#present_moment",
+				"#sanjocinemathew"
+			],
+			"content": ` 
+				<p class="MsoNormal"><span>In a
+				world overflowing with distractions, the practice of mindful listening is more
+				important than ever. Unlike passive hearing, mindful listening involves being
+				fully present and engaged in the moment, allowing for a deeper connection with
+				others. This practice is both a psychological tool and a philosophical approach
+				to communication, emphasizing the importance of understanding beyond words.</span></p><p class="MsoNormal"><b><span>Psychological
+				Perspective</span></b><span><br>
+				From a psychological standpoint, mindful listening enhances emotional
+				intelligence and fosters empathy. By focusing entirely on the speaker without
+				the distractions of forming responses or judgments, we create a space for
+				authentic communication. Studies show that mindful listening reduces
+				misunderstandings, strengthens relationships, and promotes a sense of trust and
+				connection. When we listen mindfully, we not only hear the words but also tune
+				into the emotions and intentions behind them.</span></p><p class="MsoNormal"><b><span>Philosophical
+				Insights</span></b><span><br>
+				Philosophically, mindful listening aligns with the teachings of many great
+				thinkers. As Epictetus, the Stoic philosopher, once said, "We have two
+				ears and one mouth so that we can listen twice as much as we speak." This
+				highlights the importance of listening as a foundational element of wisdom. By
+				embracing stillness and receptivity, we honour the presence of others and allow
+				deeper truths to emerge in conversation.</span></p><p class="MsoNormal"><span><br>
+				</span><strong><span lang="EN-US">Dalai Lama</span></strong><span lang="EN-US">’s&nbsp; ability to listen deeply,
+				with compassion and presence, has been a cornerstone of his teachings and
+				interactions, inspiring many to embrace mindfulness and empathy in their own
+				lives. His approach to listening and understanding others has made a profound
+				impact on global peace and communication.</span></p><p class="MsoNormal"><b><span>An</span></b><span> eagle soars high
+				above, keenly observing and listening with purpose and precision. The eagle's
+				ability to hone in on specific sounds or movements allows it to act with
+				clarity and intention. Mindful listening asks us to be more like the
+				eagle—focused, patient, and fully present—rather than the distracted. By doing
+				so, we can better understand and connect with those around us.</span></p><p class="MsoNormal">
+
+				</p><p class="MsoNormal"><span>In a
+				world that often prioritizes speaking over listening, embracing the art of
+				mindful listening allows us to connect on a deeper level and enrich our
+				interactions. As we practice this skill, we cultivate empathy, understanding,
+				and a more harmonious way of communicating.</span></p>
+				<p></p>
+        
+    `,
+		},
+		{
+			"id": "mindful-self-compassion-the-path-to-inner-strength-and-growth-sanjo-mathew-motivational-blog",
+			"title": "The Art of Mindful Listening: Cultivating Deeper Connections",
+			"subTitle": "Mindfulness Journey #5",
+			"image": "mindful-self-compassion-the-path-to-inner-strength-and-growth-sanjo-mathew-motivational-blog.jpg",
+			"authorId": "sanjomathew",
+			"date": "01 Jul, 2024",
+			"readTime": "3 min to Read",
+			"tags": [
+				"#mindful_self_compassion",
+				"#self_care_matters",
+				"#sanjo",
+				"#kindness_within",
+				"#embrace_yourself",
+				"#inner_strength",
+				"#self_love_journey",
+				"#mental_wellness",
+				"#mindful_living",
+				"#grace_and_growth",
+				"#sanjocinemathew"
+			],
+			"content": ` 
+								<p class="MsoNormal"><span>Mindful
+				self-compassion is the practice of extending the same kindness, care, and understanding
+				to ourselves that we naturally offer others. In a world where self-criticism is
+				common, mindful self-compassion serves as a powerful antidote to negative
+				self-talk and self-doubt.</span></p><p class="MsoNormal"><span><br>
+				Psychologically, mindful self-compassion has been shown to reduce anxiety,
+				depression, and stress. Dr. Kristin Neff, a leading researcher in this field,
+				emphasizes that self-compassion is not about self-pity or indulgence but about
+				treating oneself with the same empathy and care as one would a friend. This
+				practice builds emotional resilience by allowing individuals to acknowledge
+				their struggles without judgment, leading to greater well-being and mental
+				clarity.</span></p><p class="MsoNormal"><span>Philosophically,
+				self-compassion aligns with the idea of embracing imperfections and finding
+				balance within oneself. By treating our flaws with understanding and our
+				strengths with grace, we can lead more harmonious lives. This concept mirrors
+				Stoic teachings that advocate for acceptance of life's challenges without harsh
+				self-judgment.</span></p><p class="MsoNormal"><span>In Christianity,
+				self-compassion can be seen in the example of Jesus Christ. Despite the demands
+				of His ministry, Jesus took time for solitude, prayer, and reflection. By
+				retreating to pray, He demonstrated the importance of self-care and spiritual
+				renewal. This act of caring for oneself emphasizes that self-compassion is
+				essential for maintaining strength and balance in all aspects of life.</span></p><p class="MsoNormal"><span>Nature offers profound
+				lessons in self-care. Plants produce heat shock proteins (HSPs) during
+				stressful conditions like extreme heat or drought. These proteins act as
+				protective agents, helping plants maintain cellular function and recover from
+				stress. Similarly, mindful self-compassion serves as our internal defence
+				system, helping us cope with emotional difficulties and maintain balance.</span></p><p class="MsoNormal"><span>Animals also show us
+				the importance of self-care. Cats, for example, spend significant time grooming
+				themselves to stay clean and free of parasites. This behaviour not only
+				maintains their physical health but also provides comfort and stress relief.
+				Just as cats care for themselves, we too must engage in practices that nurture
+				our well-being.</span></p><p class="MsoNormal">
+
+				</p><p class="MsoNormal"><span>Mindful
+				self-compassion is not a luxury but a necessity for mental well-being. By
+				embracing it, we strengthen our capacity for love, resilience, and growth.
+				Whether through psychological practices, philosophical reflection, spiritual
+				teachings, or lessons from nature, self-compassion is a powerful tool for
+				living a balanced and fulfilling life.</span></p>
+						<p></p>
+    `,
+		},
+		{
+			"id": "mindful-observation-unlocking-the-extraordinary-in-the-ordinary-sanjo-mathew-motivational-blog",
+			"title": "Mindful Observation: Unlocking the Extraordinary in the Ordinary",
+			"subTitle": "Mindfulness Journey #6",
+			"image": "mindful-observation-unlocking-the-extraordinary-in-the-ordinary-sanjo-mathew-motivational-blog.jpg",
+			"authorId": "sanjomathew",
+			"date": "01 Jul, 2024",
+			"readTime": "3 min to Read",
+			"tags": [
+				"#mindful_observation",
+				"#present_moment",
+				"#find_beauty_in_everyday",
+				"#mindfulness_matters",
+				"#live_in_the_now",
+				"#mental_wellbeing",
+				"#sanjo",
+				"#peaceful_mind",
+				"#slow_living",
+				"#gratitude_in_action",
+				"#vincent_van_gogh",
+				"#sanjocinemathew"
+			],
+			"content": ` 
+				<p class="MsoNormal"><span>Mindful observation is
+				the practice of fully engaging with the present moment, noticing the details of
+				the world around us, and appreciating the beauty in everyday life. This simple
+				yet profound practice can significantly enhance mental well-being.</span></p><p class="MsoNormal"><span>Studies have shown
+				that being present and fully attentive to our surroundings reduces stress,
+				anxiety, and negative thought patterns. Mindfulness allows us to break free
+				from the cycle of rumination, grounding us in the present and fostering a sense
+				of calm and clarity. By observing our environment with curiosity and openness,
+				we cultivate a more positive mindset and improve our overall mental health.</span></p><p class="MsoNormal"><span>Philosophically,
+				mindful observation is linked to the concept of "phenomenology,"
+				where the focus is on experiencing things as they truly are, without
+				preconceived notions. Philosophers like Thoreau and Heidegger emphasized the
+				importance of seeing the world with fresh eyes, allowing us to connect more
+				deeply with reality. This approach encourages us to move beyond surface-level
+				perceptions and explore the richness of life’s experiences.</span></p><p class="MsoNormal"><span>In religious
+				traditions, mindful observation is central to spiritual practice. In Buddhism,
+				observing the present moment leads to enlightenment. Similarly, Christianity
+				teaches the importance of "beholding" creation with reverence,
+				recognizing the divine in everyday moments. These traditions remind us that by
+				observing life with intention and awareness, we can connect with something
+				greater than ourselves.</span></p><p class="MsoNormal"><span>An analogy can be
+				drawn from a child discovering the world for the first time. Their wonder and
+				curiosity remind us of the importance of mindful observation. By adopting this
+				childlike sense of awe, we can transform mundane experiences into opportunities
+				for growth and joy.</span></p><p class="MsoNormal"><span>Vincent van Gogh, the
+				renowned Dutch painter, exemplifies mindful observation through his art. Van
+				Gogh had an extraordinary ability to see and capture the beauty in the
+				ordinary. Whether it was a simple wheat field, a starry night, or a pair of
+				worn-out shoes, his works reveal a deep connection to his surroundings. He once
+				said, "If you truly love nature, you will find beauty everywhere."
+				This reflects mindful observation—seeing beyond the surface to appreciate the
+				intricate details and emotions embedded in the world around us.</span></p><p class="MsoNormal"><span>Incorporating mindful
+				observation into daily life can lead to a greater appreciation for the present
+				and deeper connections with others. By simply slowing down and paying
+				attention, we unlock the extraordinary in the ordinary, making our lives richer
+				and more fulfilling.</span></p><p class="MsoNormal">
+
+				</p><p class="MsoNormal"><span>Mindful observation is
+				a practice that enhances not only our mental and emotional well-being but also
+				our connection to the world around us. By embracing this practice, we can lead
+				more balanced, present, and meaningful lives.</span></p>
+				<p></p>
+
+    `,
+		},
+		{
+			"id": "mindful-resilience-cultivating-strength-through-mindful-living-sanjo-mathew-motivational-blog",
+			"title": "Mindful Observation: Unlocking the Extraordinary in the Ordinary",
+			"subTitle": "Mindfulness Journey #7",
+			"image": "mindful-resilience-cultivating-strength-through-mindful-living-sanjo-mathew-motivational-blog.jpg",
+			"authorId": "sanjomathew",
+			"date": "01 Jul, 2024",
+			"readTime": "3 min to Read",
+			"tags": [
+				"#mindful_resilience",
+				"#inner_strength",
+				"#calm_in_the_storm",
+				"#mindful_living",
+				"#growth_through_challenges",
+				"#mental_wellness",
+				"#sanjo",
+				"#resilience_in_action",
+				"#mindfulness_matters",
+				"#overcome_with_grace",
+				"#balanced_mindset"
+			],
+			"content": ` 
+				<p class="MsoNormal"><span>Mindful observation is
+				the practice of fully engaging with the present moment, noticing the details of
+				the world around us, and appreciating the beauty in everyday life. This simple
+				yet profound practice can significantly enhance mental well-being.</span></p><p class="MsoNormal"><span>Studies have shown
+				that being present and fully attentive to our surroundings reduces stress,
+				anxiety, and negative thought patterns. Mindfulness allows us to break free
+				from the cycle of rumination, grounding us in the present and fostering a sense
+				of calm and clarity. By observing our environment with curiosity and openness,
+				we cultivate a more positive mindset and improve our overall mental health.</span></p><p class="MsoNormal"><span>Philosophically,
+				mindful observation is linked to the concept of "phenomenology,"
+				where the focus is on experiencing things as they truly are, without
+				preconceived notions. Philosophers like Thoreau and Heidegger emphasized the
+				importance of seeing the world with fresh eyes, allowing us to connect more
+				deeply with reality. This approach encourages us to move beyond surface-level
+				perceptions and explore the richness of life’s experiences.</span></p><p class="MsoNormal"><span>In religious
+				traditions, mindful observation is central to spiritual practice. In Buddhism,
+				observing the present moment leads to enlightenment. Similarly, Christianity
+				teaches the importance of "beholding" creation with reverence,
+				recognizing the divine in everyday moments. These traditions remind us that by
+				observing life with intention and awareness, we can connect with something
+				greater than ourselves.</span></p><p class="MsoNormal"><span>An analogy can be
+				drawn from a child discovering the world for the first time. Their wonder and
+				curiosity remind us of the importance of mindful observation. By adopting this
+				childlike sense of awe, we can transform mundane experiences into opportunities
+				for growth and joy.</span></p><p class="MsoNormal"><span>Vincent van Gogh, the
+				renowned Dutch painter, exemplifies mindful observation through his art. Van
+				Gogh had an extraordinary ability to see and capture the beauty in the
+				ordinary. Whether it was a simple wheat field, a starry night, or a pair of
+				worn-out shoes, his works reveal a deep connection to his surroundings. He once
+				said, "If you truly love nature, you will find beauty everywhere."
+				This reflects mindful observation—seeing beyond the surface to appreciate the
+				intricate details and emotions embedded in the world around us.</span></p><p class="MsoNormal"><span>Incorporating mindful
+				observation into daily life can lead to a greater appreciation for the present
+				and deeper connections with others. By simply slowing down and paying
+				attention, we unlock the extraordinary in the ordinary, making our lives richer
+				and more fulfilling.</span></p><p class="MsoNormal">
+
+				</p><p class="MsoNormal"><span>Mindful observation is
+				a practice that enhances not only our mental and emotional well-being but also
+				our connection to the world around us. By embracing this practice, we can lead
+				more balanced, present, and meaningful lives.</span></p>
+				<p></p>
+
+    `,
 		},
 	],
 	"sections": {
@@ -530,7 +1272,6 @@ var data = {
 function loadContent() {
 	const currentPage = window.location.pathname.split("/").pop().split(".")[0];
 	const urlParams = new URLSearchParams(window.location.search);
-	console.log(currentPage);
 	if (currentPage === 'index' || currentPage === '') {
 		document.getElementById("tags").innerHTML = `
 		${data.tags.map((tag) => tag.showInHome === true ?
@@ -571,28 +1312,29 @@ function loadContent() {
             <a href="post-details.html?blogId=${editorsPickPost.id}" class="btn btn-outline-primary">Read More</a>
           </div>
 			`;
+
 		const tendingPosts = data.posts.filter((post) => data.sections.trendingPosts.includes(post.id));
 		document.getElementById("trending-posts").innerHTML =
 			`${tendingPosts.map((post) => `
-				<article class="card mb-4">
-					<div class="card-body d-flex">
+			<article class="card mb-4">
+				<div class="card-body d-flex">
 					<img class="card-img-sm" src="images/post/${post.image}" alt="${post.title}">
 					<div class="ml-3">
-						<h4><a alt="${post.title}" href="post-details.html?blogId=${post.id}" class="post-title">${post.title}</a></h4>
+						<h4><a href="post-details.html?blogId=${post.id}" class="post-title">${post.title}</a></h4>
 						<ul class="card-meta list-inline mb-0">
-						<li class="list-inline-item mb-0">
-							<i class="ti-calendar"></i>${post.date}
-						</li>
-						<li class="list-inline-item mb-0">
-							<i class="ti-timer"></i>${post.readTime}
-						</li>
+							<li class="list-inline-item mb-0">
+								<i class="ti-calendar"></i>${post.date}
+							</li>
+							<li class="list-inline-item mb-0">
+								<i class="ti-timer"></i>${post.readTime}
+							</li>
 						</ul>
 					</div>
-					</div>
-			</article>`)}`;
+				</div>
+			</article>`
+			).join('')}`;
 
 		const popularPost = data.posts.find((post) => post.id == data.sections.popularPost.postId);
-
 		document.getElementById("popular-post").innerHTML = `
 		  <article class="card">
           <div class="post-slider slider-sm">
@@ -627,7 +1369,7 @@ function loadContent() {
         </article>`;
 		document.getElementById("recent-posts").innerHTML = ` <h2 class="h5 section-title">Recent Post</h2>`;
 		document.getElementById("recent-posts").innerHTML +=
-			`;
+			`
 		${data.posts.reverse().map((post) => `
 		    <article class="card mb-4">
         <div class="post-slider text-center">
@@ -659,7 +1401,7 @@ function loadContent() {
             <p>${post.content.substring(0, 250)}…</p>
             <a href="post-details.html?blogId=${post.id}" alt=${post.title} class="btn btn-outline-primary">Read More</a>
         </div>
-  		  </article>`)}`;
+  		  </article>`).join('')}`;
 	} else if (currentPage === 'post-details') {
 		const blogId = urlParams.get('blogId');
 		const blogPost = data.posts.find((post) => post.id === blogId);
@@ -740,10 +1482,10 @@ function loadContent() {
 
 	}
 
-	const recentPostsoForWidget = data.posts.filter((post) => data.sections.recentPosts.includes(post.id));
+	const recentPostsForWidget = [data.posts[data.posts.length - 1]];
 	document.getElementById("recent-post-widget").innerHTML = ` <h4 class="widget-title">Recent Post</h4>`
 	document.getElementById("recent-post-widget").innerHTML +=
-		`${recentPostsoForWidget.map((post) => `
+		`${recentPostsForWidget.map((post) => `
 
 			<article class="widget-card">
 			<div class="d-flex">
