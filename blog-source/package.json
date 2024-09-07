@@ -1,8 +1,8 @@
 {
-  "name": "reader",
+  "name": "sanjoblog",
   "version": "1.0.0",
-  "description": "reader free bootstrap blog template",
-  "author": "Themefisher",
+  "description": "Made for Sanjo.in",
+  "author": "Jijish Thomas",
   "license": "MIT",
   "scripts": {
     "dev": "gulp",

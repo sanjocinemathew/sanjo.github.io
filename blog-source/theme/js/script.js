@@ -1,8 +1,5 @@
 /**
- * WEBSITE: https://themefisher.com
- * TWITTER: https://twitter.com/themefisher
- * FACEBOOK: https://www.facebook.com/themefisher
- * GITHUB: https://github.com/themefisher/
+ * WEBSITE: https://sanjo.in
  */
 
 
@@ -1257,6 +1254,78 @@ var data = {
 
     `,
 		},
+		{
+			"id": "mindful-resilience-cultivating-strength-through-mindful-living-sanjo-mathew-motivational-blog",
+			"title": "Mindful Resilience: Cultivating Strength Through Mindful Living",
+			"subTitle": "Mindfulness Journey #7",
+			"image": "mindful-resilience-cultivating-strength-through-mindful-living-sanjo-mathew-motivational-blog.jpg",
+			"authorId": "sanjomathew",
+			"date": "01 Jul, 2024",
+			"readTime": "3 min to Read",
+			"tags": [
+				"#mindful_resilience",
+				"#inner_strength",
+				"#calm_in_the_storm",
+				"#mindful_living",
+				"#sanjocinemathew",
+				"#growth_through_challenges",
+				"#mental_wellness",
+				"#sanjo",
+				"#resilience_in_action",
+				"#mindfulness_matters",
+				"#overcome_with_grace",
+				"#balanced_mindset"
+			],
+			"content": ` 
+				<p class="MsoNormal"><span>In a world filled with
+				uncertainty and challenges, resilience is often the key to thriving rather than
+				merely surviving. Mindful resilience, a concept rooted in psychology and
+				philosophy, is about cultivating the strength to adapt, recover, and grow in
+				the face of adversity through mindfulness. By staying present and aware, we can
+				navigate life’s difficulties with calm, clarity, and grace.</span></p>
+
+				<p class="MsoNormal"><span>Resilience is the
+				ability to bounce back from setbacks. Mindfulness enhances this by fostering
+				emotional regulation and reducing stress. Studies have shown that mindfulness
+				practices, such as meditation and mindful breathing, improve cognitive
+				flexibility, allowing individuals to respond to challenges with a balanced and
+				composed mindset. By staying present and non-judgmental, mindful resilience
+				helps us process emotions effectively, preventing overwhelm and fostering a
+				sense of inner peace.</span></p>
+
+				<p class="MsoNormal"><span>As Marcus Aurelius
+				said, "<i>The impediment to action advances action. What stands in the way
+				becomes the way.</i>" Mindful resilience teaches us to embrace obstacles as
+				opportunities for growth, viewing challenges as a path to greater understanding
+				and strength.</span></p>
+
+				<p class="MsoNormal"><span>Consider Nelson
+				Mandela, who, despite enduring 27 years of imprisonment, emerged with a message
+				of peace and reconciliation. His ability to remain present, compassionate, and
+				focused on the bigger picture during such adversity is a testament to mindful resilience
+				in action.</span></p>
+
+				<p class="MsoNormal"><span>Nature provides
+				powerful analogies for mindful resilience. The bamboo tree, for example, bends
+				in the wind but doesn’t break. This flexibility allows it to survive and thrive
+				in harsh conditions, much like how mindfulness enables us to adapt and stay grounded
+				during life’s storms.</span></p>
+
+				<p class="MsoNormal"><span>Incorporating mindful
+				resilience into daily life can transform how we handle stress, setbacks, and
+				challenges. By being present, accepting what comes our way, and responding with
+				awareness, we build emotional strength and find peace in the midst of chaos.
+				Mindful resilience is not just about surviving adversity; it’s about growing
+				through it and emerging stronger on the other side.</span></p>
+
+				<p class="MsoNormal"><span>In a world where
+				challenges are inevitable, mindful resilience empowers us to face them with
+				calm, clarity, and confidence. By integrating mindfulness into our lives, we
+				cultivate the strength to not only endure but to thrive.</span></p>
+				<p></p>
+    
+    `,
+		},
 	],
 	"sections": {
 		"editorsPick": {
@@ -1291,7 +1360,6 @@ function setQueryParam(name, value) {
 	urlParams.set(name, value);
 	window.history.replaceState(null, '', '?' + urlParams.toString());
 }
-
 
 function navigateToPage(pageNumber) {
 	if (pageNumber < 1 || pageNumber > totalPages) return;
@@ -1532,39 +1600,110 @@ function loadContent() {
 	} else if (currentPage === 'post-details') {
 		const blogId = urlParams.get('blogId');
 		const blogPost = data.posts.find((post) => post.id === blogId);
-		document.getElementById("sanjo-blog").innerHTML = `
-		<article>
-          <div class="post-slider mb-4 text-center">
-            <img src="images/post/${blogPost.image}" style="width:50%;" class="card-img" alt="${blogPost.title}">
-          </div>
-          <h1 class="h2">${blogPost.title}</h1>
-          <p class="h4"><i>${blogPost.subTitle}</i></p>
-          <ul class="card-meta my-3 list-inline">
-            <li class="list-inline-item">
-              <a href="about-me.html" class="card-meta-author">
-                <img src="${data.author.photo}" alt="Photo of ${data.author.shortName}-${data.author.bio}">
-                <span>${data.author.shortName}</span>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <i class="ti-timer"></i>${blogPost.readTime}
-            </li>
-            <li class="list-inline-item">
-              <i class="ti-calendar"></i>${blogPost.date}
-            </li>
-            <li class="list-inline-item">
-              <ul class="card-meta-tag list-inline">
-			  ${blogPost.tags.map((tag) =>
-			`<li class="list-inline-item"><a href="tags.html?tag=${tag.replace("#", "")}">${tag}</a></li>`
-		).join('')}
-              </ul>
-            </li>
-          </ul>
-          <div class="content">
-		  ${blogPost.content}
-          </div>
+
+		if (blogPost) {
+			document.title = `${blogPost.title} | Sanjo Cine Mathew Blog`;
+
+			// Set meta description
+			const descriptionMeta = document.querySelector('meta[name="description"]');
+			if (descriptionMeta) {
+				descriptionMeta.setAttribute("content", `${blogPost.content.substring(0, 160)}...`);
+			} else {
+				const newDescriptionMeta = document.createElement('meta');
+				newDescriptionMeta.name = "description";
+				newDescriptionMeta.content = `${blogPost.content.substring(0, 160)}...`;
+				document.head.appendChild(newDescriptionMeta);
+			}
+
+			// Set meta keywords
+			const keywordsMeta = document.querySelector('meta[name="keywords"]');
+			if (keywordsMeta) {
+				keywordsMeta.setAttribute("content", `${blogPost.tags.join(", ")}`);
+			} else {
+				const newKeywordsMeta = document.createElement('meta');
+				newKeywordsMeta.name = "keywords";
+				newKeywordsMeta.content = `${blogPost.tags.join(", ")}`;
+				document.head.appendChild(newKeywordsMeta);
+			}
+
+			// Set Open Graph meta tags for social media sharing
+			const ogTitle = document.createElement('meta');
+			ogTitle.setAttribute('property', 'og:title');
+			ogTitle.setAttribute('content', `${blogPost.title} | Sanjo Mathew Blog`);
+			document.head.appendChild(ogTitle);
+
+			const ogDescription = document.createElement('meta');
+			ogDescription.setAttribute('property', 'og:description');
+			ogDescription.setAttribute('content', `${blogPost.content.substring(0, 160)}...`);
+			document.head.appendChild(ogDescription);
+
+			const ogImage = document.createElement('meta');
+			ogImage.setAttribute('property', 'og:image');
+			ogImage.setAttribute('content', `images/post/${blogPost.image}`);
+			document.head.appendChild(ogImage);
+
+			const ogUrl = document.createElement('meta');
+			ogUrl.setAttribute('property', 'og:url');
+			ogUrl.setAttribute('content', window.location.href);
+			document.head.appendChild(ogUrl);
+
+			// Set Twitter card meta tags
+			const twitterCard = document.createElement('meta');
+			twitterCard.setAttribute('name', 'twitter:card');
+			twitterCard.setAttribute('content', 'summary_large_image');
+			document.head.appendChild(twitterCard);
+
+			const twitterTitle = document.createElement('meta');
+			twitterTitle.setAttribute('name', 'twitter:title');
+			twitterTitle.setAttribute('content', `${blogPost.title} | Sanjo Mathew Blog`);
+			document.head.appendChild(twitterTitle);
+
+			const twitterDescription = document.createElement('meta');
+			twitterDescription.setAttribute('name', 'twitter:description');
+			twitterDescription.setAttribute('content', `${blogPost.content.substring(0, 160)}...`);
+			document.head.appendChild(twitterDescription);
+
+			const twitterImage = document.createElement('meta');
+			twitterImage.setAttribute('name', 'twitter:image');
+			twitterImage.setAttribute('content', `images/post/${blogPost.image}`);
+			document.head.appendChild(twitterImage);
+
+			document.getElementById("sanjo-blog").innerHTML = `
+        <article>
+            <div class="post-slider mb-4 text-center">
+                <img src="images/post/${blogPost.image}" style="width:50%;" class="card-img" alt="${blogPost.title}">
+            </div>
+            <h1 class="h2">${blogPost.title}</h1>
+            <p class="h4"><i>${blogPost.subTitle}</i></p>
+            <ul class="card-meta my-3 list-inline">
+                <li class="list-inline-item">
+                    <a href="about-me.html" class="card-meta-author">
+                        <img src="${data.author.photo}" alt="Photo of ${data.author.shortName}-${data.author.bio}">
+                        <span>${data.author.shortName}</span>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <i class="ti-timer"></i>${blogPost.readTime}
+                </li>
+                <li class="list-inline-item">
+                    <i class="ti-calendar"></i>${blogPost.date}
+                </li>
+                <li class="list-inline-item">
+                    <ul class="card-meta-tag list-inline">
+                    ${blogPost.tags.map((tag) =>
+				`<li class="list-inline-item"><a href="tags.html?tag=${tag.replace("#", "")}">${tag}</a></li>`
+			).join('')}
+                    </ul>
+                </li>
+            </ul>
+            <div class="content">
+                ${blogPost.content}
+            </div>
         </article>
-		`;
+    `;
+		} else {
+			console.error("Blog post not found");
+		}
 	} else if (currentPage === 'tags') {
 		const tag = urlParams.get('tag');
 		const postsWithTag = data.posts.filter((post) => post.tags.includes(`#${tag}`));
@@ -1603,7 +1742,28 @@ function loadContent() {
 				</div>
 				</article>
 				`).join('')}
-				`;
+		`;
+	} else if (currentPage === 'about-me') {
+		// Assuming the author object is part of your data structure
+		const author = data.author;
+
+		// Set the meta tags for the author details page
+		document.querySelector('meta[name="description"]').setAttribute("content", `Explore the journey and insights of ${author.name}, a ${author.bio}. Connect with ${author.shortName} on Facebook, LinkedIn, Instagram, and YouTube.`);
+		document.querySelector('meta[name="keywords"]').setAttribute("content", `${author.name}, Counselling Psychologist, Skill Coach, Learning Facilitator, Facebook, LinkedIn, Instagram, YouTube`);
+
+		document.querySelector('meta[property="og:title"]').setAttribute("content", `${author.name} - ${author.bio}`);
+		document.querySelector('meta[property="og:description"]').setAttribute("content", `Unlock Your Full Potential with personalized guidance from ${author.name}. Connect with ${author.shortName} on social media platforms like Facebook, LinkedIn, Instagram, and YouTube.`);
+		document.querySelector('meta[property="og:image"]').setAttribute("content", author.photo);
+		document.querySelector('meta[property="og:url"]').setAttribute("content", window.location.href);
+
+		document.querySelector('meta[name="twitter:card"]').setAttribute("content", "summary_large_image");
+		document.querySelector('meta[name="twitter:title"]').setAttribute("content", `${author.name} - ${author.bio}`);
+		document.querySelector('meta[name="twitter:description"]').setAttribute("content", `Connect with ${author.name} and explore his journey as a ${author.bio}.`);
+		document.querySelector('meta[name="twitter:image"]').setAttribute("content", author.photo);
+
+		document.querySelector('meta[name="author"]').setAttribute("content", author.name);
+		document.querySelector('meta[property="article:author"]').setAttribute("content", author.socialLinks.facebook);
+
 	}
 	const recentPostsForWidget = [data.posts[0]];
 	document.getElementById("recent-post-widget").innerHTML = ` <h4 class="widget-title">Recent Post</h4>`
