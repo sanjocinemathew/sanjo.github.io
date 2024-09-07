@@ -1,3 +1,7 @@
+/**
+ * WEBSITE: https://sanjo.in
+ */
+
 
 $(window).on('load', function () {
 	'use strict';
