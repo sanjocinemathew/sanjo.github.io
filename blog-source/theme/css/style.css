@@ -1466,3 +1466,17 @@ mark {
   box-shadow: none !important;
 }
 /*# sourceMappingURL=style.css.map */
+
+
+
+@media (max-width: 767px) {
+  .blog-main-img{
+    width:50%;
+  }
+}
+
+@media (min-width: 768px) {
+  .blog-main-img{
+    width:90%;
+  }
+}
