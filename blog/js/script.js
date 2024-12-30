@@ -2600,7 +2600,9 @@ function renderPostsForPage(pageNumber) {
                 ${postsToRender.map(post => `
                     <article class="card mb-4">
                         <div class="post-slider text-center">
+						<a class="post-title" alt="${post.title}" href="post-details.html?blogId=${post.id}">
                             <img src="images/post/${post.image}" style="width:50%;" class="card-img-top" alt="${post.title}">
+							</a
                         </div>
                         <div class="card-body">
                             <h3 class="mb-3"><a class="post-title" alt="${post.title}" href="post-details.html?blogId=${post.id}">${post.title}</a></h3>
