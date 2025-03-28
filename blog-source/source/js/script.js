@@ -2661,7 +2661,7 @@ remarkable legacy.</span></p>
 			"date": "10 Mar 2025",
 			"readTime": "5 min to Read",
 			"tags": [
-				"#life" ,"#motivation", "#selfcare" ,"#womenempowerment" ,"#mindset" ,"#postivethoughts" ,"#success" ,"#sanjocinemathew",
+				"#life", "#motivation", "#selfcare", "#womenempowerment", "#mindset", "#postivethoughts", "#success", "#sanjocinemathew",
 				"#sanjo",
 				"#sanjo-mathew"
 			],
@@ -2676,7 +2676,7 @@ remarkable legacy.</span></p>
 			"date": "14 Mar 2025",
 			"readTime": "5 min to Read",
 			"tags": [
-				"#Holi2025","#CelebrateLife"," #LiveVibrantly"," #ColorsOfLife"," #JoyInEveryMoment"," #EmbraceDiversity"," #HoliFestival"," #LoveDeeply"," #HappyHoli"," #FestivalOfColors"," #CelebrateWithLove"," #LifeIsAFestival"," #sanjocinemathew",
+				"#Holi2025", "#CelebrateLife", " #LiveVibrantly", " #ColorsOfLife", " #JoyInEveryMoment", " #EmbraceDiversity", " #HoliFestival", " #LoveDeeply", " #HappyHoli", " #FestivalOfColors", " #CelebrateWithLove", " #LifeIsAFestival", " #sanjocinemathew",
 				"#sanjo",
 				"#sanjo-mathew"
 			],
@@ -2696,8 +2696,23 @@ remarkable legacy.</span></p>
 				"#sanjo-mathew"
 			],
 			"content": "<p>You&rsquo;ve heard it before: <em>&ldquo;Consistency is key.&rdquo;</em> But let&rsquo;s be honest&mdash;who has time for that? Surely, skipping the gym after one week won&rsquo;t hurt, right? Just like eating one salad magically makes you healthy. Or reading one self-help book turns you into a Zen master.</p>\n\n<p>Except&hellip; it doesn&rsquo;t.</p>\n\n<p><strong>The Science of Why You Quit (And How to Stop It)</strong></p>\n\n<p>Psychologically speaking, our brains love instant gratification. Thanks to dopamine, we crave the quick win, the viral moment, the get-rich-quick scheme. But research in behavioural psychology proves that real progress isn&rsquo;t about intensity; it&rsquo;s about <strong>showing up, even when you don&rsquo;t feel like it</strong>.</p>\n\n<ul>\n\t<li><strong>Example 1: The Gym Myth</strong> &ndash; You see that ultra-fit person? They didn&rsquo;t do a &quot;21-day challenge.&quot; They showed up for years.</li>\n\t<li><strong>Example 2: The &#39;Lucky&#39; Entrepreneur</strong> &ndash; That millionaire startup founder? They failed five businesses before the sixth one took off.</li>\n\t<li><strong>Example 3: The &quot;Talented&quot; Musician</strong> &ndash; Your favourite artist? They played to empty bars before selling out stadiums.</li>\n</ul>\n\n<p><strong>Why Most People Fail (And How You Can Win)</strong></p>\n\n<p>People don&rsquo;t fail because they lack talent or intelligence. They fail because they <strong>give up too soon</strong>. The secret? <strong>Boring, unsexy, daily repetition.</strong></p>\n\n<p>👉 Want to be fit? Move daily.<br />\n👉 Want to be a great writer? Write daily.<br />\n👉 Want a great relationship? Communicate daily.</p>\n\n<p>It&rsquo;s not about motivation; it&rsquo;s about discipline. <strong>Consistency compounds, while inconsistency resets you to zero.</strong></p>\n\n<p><strong>The One Rule That Changes Everything</strong></p>\n\n<p>If you take one thing from this, let it be this: <strong>Make quitting harder than continuing.</strong></p>\n\n<ul>\n\t<li>Set up tiny, ridiculously easy habits.</li>\n\t<li>Stack habits onto existing routines.</li>\n\t<li>Track progress (because the brain loves rewards).</li>\n</ul>\n\n<p><strong>Final Thought: The Power of Showing Up</strong></p>\n\n<p>The difference between those who &ldquo;make it&rdquo; and those who don&rsquo;t? One kept going when the excitement faded.</p>\n\n<p>So, will you keep waiting for the &ldquo;perfect moment,&rdquo; or will you start being consistently, imperfectly, <em>unstoppable</em>?</p>\n"
+		},
+		{
+			"id": "caged-power",
+			"title": "Caged Power",
+			"subTitle": "How Misalignment with Your True Nature Silently Destroys You",
+			"image": "caged-power-sanjo-blog.png",
+			"authorId": "sanjomathew",
+			"date": "27 Mar 2025",
+			"readTime": "3 min to Read",
+			"tags": [
+				"#BlueprintForLife", "#BreakingFree", "#NewBook", "#PersonalGrowth", "#SelfDiscovery", "#life", "#women", "#empowerment", "#motivation",
+				"#sanjo",
+				"#sanjo-mathew"
+			],
+			"content": "<p>Take a tigress out of the wild, and she doesn&rsquo;t become tame&mdash;she becomes restless, weak, and loses her essence. The same happens when we force ourselves into roles, careers, or lifestyles that don&rsquo;t align with who we truly are.</p>\n\n<p>Stress isn&rsquo;t just about workload or deadlines. It&rsquo;s a silent sabotage, a sign that something deeper is off. NLP and psychology reveal that when we live out of sync with our natural strengths and values, our subconscious resists, draining our energy and triggering self-doubt. Over time, this misalignment leads to burnout, anxiety, and a feeling of emptiness&mdash;even when we appear successful on the outside.</p>\n\n<p><strong>Why does this happen?</strong><br />\nOur minds are wired for survival, not fulfilment. We adapt to societal expectations, family pressures, and external validation&mdash;often at the cost of our own happiness. Like a caged tigress, we may not realize the damage until the fire inside us starts to fade.</p>\n\n<p><strong>The Way Out? Realign. Redefine. Reclaim.</strong></p>\n\n<ul>\n\t<li><strong>Recognize the signs of misalignment</strong>&mdash;chronic stress, lack of passion, or feeling like you&#39;re constantly pushing against resistance.</li>\n\t<li><strong>Use NLP techniques</strong> to reprogram limiting beliefs and break free from subconscious conditioning.</li>\n\t<li><strong>Reconnect with your blueprint</strong>&mdash;your strengths, values, and natural energy zones.</li>\n</ul>\n\n<p>True success isn&rsquo;t about adapting to the wrong space&mdash;it&rsquo;s about thriving in the right one.</p>\n\n<p><strong>&nbsp;<em>If this resonates, my upcoming book will help you realign and rediscover yourself... Stay tuned!</em> </strong></p>\n"
 		}
-		
+
 
 		//", "#
 
