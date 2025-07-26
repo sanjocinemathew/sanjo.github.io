@@ -233,3 +233,52 @@ function bkavalidate(e) {
 // $(window).on('load', function () {
 //   $('#program-modal').modal('show');
 // });
+$(document).ready(function () {
+  $(".fancybox").fancybox({
+    openEffect: "none",
+    closeEffect: "none"
+  });
+
+  $(".zoom").hover(function () {
+
+    $(this).addClass('transition');
+  }, function () {
+
+    $(this).removeClass('transition');
+  });
+});
+
+
+const imageFilenames = [
+  "academic-rediness-proramme-for-students-bishop-moore-vidyapith-cherthala-sanjo-mathew-trainer.png",
+  "creative-thinking-session-unity-womens-college-malappuram-sanjo-mathew-trainer.jpg",
+  "learning-science-experimental-way-sri-vijaya-vidaya-metric-school-salem-tamil-nadu-sanjo-mathew-trainer.jpg",
+  "makam-english-medium-public-school-trivandrum-sanjo-mathew-trainer.jpeg",
+  "mathi-coding-ai-residentail-summer-camp-nit-calicut-sanjo-mathew-trainer.jpg",
+  "parents-orientation-program-vimala-central-school-chathanoor-kollam-sanjo-mathew-trainer.jpeg",
+  "parents-orientation-programme-de-paul-school-thodupuzha-idukki-sanjo-mathew-trainer.jpeg",
+  "parents-orientation-programme-st-maria-goretti-public-school-ernakulam-sanjo-mathew-trainer.jpeg",
+  "pathanamthitta-summer-camp-students-vacation-sanjo-mathew-trainer.png",
+  "school-reopening-njanodayam-public-school-edakochi-ernakulam-sanjo-mathew-trainer.jpg",
+  "students-training-programme-caarmel-english-medium-school-ernakulam-sanjo-mathew-trainer.jpeg",
+  "summer-camp-for-students-at-pathanamthitta-sanjo-mathew-trainer.png",
+  "teachers-training-belibers-church-school-thiruvalla-sanjo-mathew-trainer.jpeg",
+  "teachers-training-programme-believers-church-english-medium-school-alleppey-sanjo-mathew-trainer.jpeg",
+  "teachers-training-programme-gregorian-public-school-kottayam-sanjo-mathew-trainer.jpg",
+  "teachers-training-programme-nizamia-public-school-trivandrum-sanjo-mathew-trainer.jpg",
+  "teachers-training-programme-st-marys-english-medium-school-kollam-sanjo-mathew-trainer.jpeg",
+  "teachers=training-programme-caarmel-english-medium-school-ernakulam-sanjo-mathew-trainer.jpeg"
+];
+
+const gallery = document.getElementById('gallery');
+
+imageFilenames.forEach(filename => {
+  const div = document.createElement('div');
+  div.className = 'col-lg-3 col-md-4 col-xs-6 thumb';
+  div.innerHTML = `
+            <a href="assets/imgs/gallery/${filename}" class="fancybox" rel="ligthbox">
+                <img src="assets/imgs/gallery/${filename}" class="zoom img-fluid" alt="${filename}">
+            </a>
+        `;
+  gallery.appendChild(div);
+});
