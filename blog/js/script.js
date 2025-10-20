@@ -3464,7 +3464,7 @@ function loadContent() {
 			document.getElementById("sanjo-blog").innerHTML = `
         <article>
             <div class="post-slider mb-4 text-center">
-                <img src="images/post/${blogPost.image}" class="card-img blog-main-img" alt="${blogPost.title}">
+                <img src="images/post/${blogPost.image}" class="card-img blog-main-img img-fluid w-50" alt="${blogPost.title}">
             </div>
             <h1 class="h2">${blogPost.title}</h1>
             <p class="h4"><i>${blogPost.subTitle}</i></p>
