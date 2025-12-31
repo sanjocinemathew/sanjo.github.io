@@ -3189,6 +3189,26 @@ remarkable legacy.</span></p>
 				"#sanjo-mathew"
 			],
 			"content": "<p>Children see the world differently.<br />\nWhere adults see routines, they see possibilities.<br />\nWhere we see problems, they see puzzles waiting to be solved.</p>\n\n<p>A child&rsquo;s world is held together by innocence, powered by curiosity, and expanded through creativity. These three instincts shape how they learn, explore, and express joy. And somewhere along the journey of growing up, we begin to lose them.</p>\n\n<p>We trade wonder for deadlines, curiosity for caution, and creativity for conformity.</p>\n\n<p>But the truth is:<br />\nThe qualities we outgrow are the very qualities that keep life meaningful.</p>\n\n<p>On this Children&rsquo;s Day, let&rsquo;s pause and remember:</p>\n\n<ul>\n\t<li>Curiosity is how we discover.</li>\n\t<li>Innocence is how we trust.</li>\n\t<li>Creativity is how we thrive.</li>\n\t<li>Playfulness is how we stay alive inside.</li>\n</ul>\n\n<p>Children remind us to laugh freely, ask boldly, imagine fearlessly, and live wholeheartedly.</p>\n\n<p>So today, take a moment to reconnect with the part of you that used to dream without limits.<br />\nAwaken the inner child who still lives in you, the one who believes, explores, creates, and loves without hesitation.</p>\n\n<p>Because growing older is inevitable.<br />\nBut growing dull is optional.</p>\n\n<p><strong>Happy Children&rsquo;s Day; to Every Child, and to the Child within You.</strong></p>\n"
+		},
+		{
+			"id": "gratitude-is-not-for-the-end-of-a-year-it-is-for-the-beginning-of-the-next",
+			"title": "“Gratitude Is Not for the End of a Year - It is for the Beginning of the Next”",
+			"subTitle": "A Thought to Hold",
+			"image": "gratitude-is-not-for-the-end-of-a-year-it-is-for-the-beginning-of-the-next-sanjo-blog.jpg",
+			"authorId": "sanjomathew",
+			"date": "31 Dec 2025",
+			"readTime": "5 min to Read",
+			"tags": [
+				"#motivation",
+				"#newyearwishes",
+				"#inspiration",
+				"#gratitude",
+				"#life",
+				"#sanjocinemathew",
+				"#sanjo",
+				"#sanjo-mathew"
+			],
+			"content": "<p>As this year softens into memory, I pause, not to count achievements, but to acknowledge the grace that carried me.</p>\n\n<p>The lessons that humbled me.</p>\n\n<p>The people who stretched me.</p>\n\n<p>The moments that slowed me down so I could hear myself again.</p>\n\n<p>Gratitude, I have learned, is not polite appreciation. It is radical honesty with life.</p>\n\n<p><strong>A Thought to Hold</strong></p>\n\n<p>What if this year was not meant to be judged but understood?</p>\n\n<p>What if every delay was protection, every detour a redirection, and every silence an invitation to listen deeper?</p>\n\n<p>A woman once told me she felt her year was &ldquo;wasted.&rdquo;<br />\nNo promotions. No grand milestones. Just survival.</p>\n\n<p>Then she paused and said something quietly profound:</p>\n\n<p><em>&ldquo;But I learned how to sit with myself without running.&rdquo;</em></p>\n\n<p>That was the year&rsquo;s real win.</p>\n\n<p>Not applause - alignment.<br />\nNot speed - stillness.<br />\nNot perfection - presence.</p>\n\n<p>Sometimes, the bravest progress is invisible.</p>\n\n<p><strong>Reframing the Mindset for the Year Ahead</strong></p>\n\n<p>As you step forward, consider these gentle reframes:</p>\n\n<ul>\n\t<li>From<strong> </strong>&ldquo;What did I achieve?&rdquo; &rarr; <em>What did I become?</em></li>\n\t<li>From &ldquo;What went wrong?&rdquo; &rarr; <em>What tried to teach me?</em></li>\n\t<li>From &ldquo;I must do more.&rdquo; &rarr; <em>I choose to be more present.</em></li>\n\t<li>From reaction &rarr; <em>to intention.</em></li>\n</ul>\n\n<p>You do not need a new personality for a new year. You need a clearer relationship with yourself.</p>\n\n<p>My writing has grown from these very reflections, walking alongside people as they move:</p>\n\n<ul>\n\t<li>from reacting to life &rarr; responding with resilience (<em>The Resilience Response</em>),</li>\n\t<li>from mental noise &rarr; intentional clarity (<em>Untangle the Confusion</em>),</li>\n\t<li>from doing and striving &rarr; being aligned and authentic (<em>Harness the Harmony</em>).</li>\n</ul>\n\n<p>They are not manuals to fix you, they are mirrors to help you remember who you already are.</p>\n\n<p>As the year turns, don&rsquo;t rush to reinvent yourself.</p>\n\n<p>Sit with this question instead: <em>&ldquo;What truth about myself am I ready to live more fully?&rdquo;</em></p>\n\n<p>May your next chapter be guided less by pressure and more by presence.<br />\nLess by comparison and more by compassion.<br />\nLess by fear and more by quiet courage.</p>\n\n<p>I step into the new year grateful, grounded, and gently intentional.<br />\nIf this resonates, perhaps it is time you do too!!</p>\n\n<p><strong>Wishes for a Blessed and Inspiring New Year.</strong></p>\n"
 		}
 
 
