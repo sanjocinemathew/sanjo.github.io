@@ -89,6 +89,8 @@
     galleryImages.forEach(function (name) {
       const article = document.createElement("article");
       article.className = "gallery-item";
+      article.setAttribute("role", "button");
+      article.setAttribute("tabindex", "0");
 
       const img = document.createElement("img");
       img.src = "assets/imgs/gallery/" + name;
@@ -96,8 +98,50 @@
       img.loading = "lazy";
       img.decoding = "async";
 
+      function openLightbox() {
+        const lightbox = document.getElementById("gallery-lightbox");
+        const lightboxImage = document.getElementById("gallery-lightbox-image");
+        if (!lightbox || !lightboxImage) return;
+        lightboxImage.src = img.src;
+        lightboxImage.alt = img.alt;
+        lightbox.classList.add("open");
+        document.body.style.overflow = "hidden";
+      }
+
+      article.addEventListener("click", openLightbox);
+      article.addEventListener("keydown", function (event) {
+        if (event.key === "Enter" || event.key === " ") {
+          event.preventDefault();
+          openLightbox();
+        }
+      });
+
       article.appendChild(img);
       container.appendChild(article);
+    });
+  }
+
+  function bindLightbox() {
+    const lightbox = document.getElementById("gallery-lightbox");
+    const closeButton = document.getElementById("gallery-lightbox-close");
+    if (!lightbox || !closeButton) return;
+
+    function closeLightbox() {
+      lightbox.classList.remove("open");
+      document.body.style.overflow = "";
+    }
+
+    closeButton.addEventListener("click", closeLightbox);
+    lightbox.addEventListener("click", function (event) {
+      if (event.target === lightbox) {
+        closeLightbox();
+      }
+    });
+
+    document.addEventListener("keydown", function (event) {
+      if (event.key === "Escape" && lightbox.classList.contains("open")) {
+        closeLightbox();
+      }
     });
   }
 
@@ -169,6 +213,7 @@
   bindMobileNav();
   bindActiveNav();
   renderGallery();
+  bindLightbox();
   bindReveals();
   submitForm(
     "contactForm",
