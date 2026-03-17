@@ -449,6 +449,26 @@ a:focus {
   margin-bottom: 35px;
 }
 
+.insights-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.google-form-wrap {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 24px;
+  background: #fff;
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.12);
+}
+
+.google-form-wrap iframe {
+  width: 100%;
+  display: block;
+  border: 0;
+}
+
 
 /* end contact section */
 
