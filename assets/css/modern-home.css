@@ -49,9 +49,34 @@ a {
   text-decoration: none;
 }
 
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid #0f766e;
+  outline-offset: 2px;
+}
+
 .container {
   width: var(--container);
   margin-inline: auto;
+}
+
+.skip-link {
+  position: absolute;
+  left: 16px;
+  top: -60px;
+  z-index: 999;
+  padding: 10px 14px;
+  border-radius: 8px;
+  color: #fff;
+  background: var(--primary-2);
+  font-weight: 700;
+  transition: top 0.2s ease;
+}
+
+.skip-link:focus {
+  top: 12px;
 }
 
 .section {
@@ -155,6 +180,17 @@ a {
   height: 2px;
   margin: 4px auto;
   background: var(--text);
+}
+
+.sr-only {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
 }
 
 .hero {
@@ -722,5 +758,16 @@ a {
   .footer-wrap {
     flex-direction: column;
     align-items: flex-start;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  * {
+    animation: none !important;
+    transition: none !important;
   }
 }

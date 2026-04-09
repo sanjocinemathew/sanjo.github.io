@@ -22,22 +22,55 @@
   function bindMobileNav() {
     if (!menuBtn || !nav) return;
 
+    function syncNavAria() {
+      const isMobileMenu = window.getComputedStyle(menuBtn).display !== "none";
+      const isOpen = nav.classList.contains("open");
+      nav.setAttribute("aria-hidden", String(isMobileMenu && !isOpen));
+    }
+
+    function closeNav() {
+      nav.classList.remove("open");
+      menuBtn.setAttribute("aria-expanded", "false");
+      syncNavAria();
+    }
+
     menuBtn.addEventListener("click", function () {
       const isOpen = nav.classList.toggle("open");
       menuBtn.setAttribute("aria-expanded", String(isOpen));
+      syncNavAria();
     });
 
     nav.querySelectorAll("a").forEach(function (link) {
       link.addEventListener("click", function () {
-        nav.classList.remove("open");
-        menuBtn.setAttribute("aria-expanded", "false");
+        closeNav();
       });
     });
+
+    document.addEventListener("keydown", function (event) {
+      if (event.key === "Escape" && nav.classList.contains("open")) {
+        closeNav();
+      }
+    });
+
+    document.addEventListener("click", function (event) {
+      if (!nav.classList.contains("open")) return;
+      if (nav.contains(event.target) || menuBtn.contains(event.target)) return;
+      closeNav();
+    });
+
+    window.addEventListener("resize", syncNavAria, { passive: true });
+    syncNavAria();
   }
 
   function bindReveal() {
     const nodes = Array.from(document.querySelectorAll(".reveal"));
     if (!nodes.length) return;
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      nodes.forEach(function (node) {
+        node.classList.add("visible");
+      });
+      return;
+    }
 
     const observer = new IntersectionObserver(
       function (entries, obs) {

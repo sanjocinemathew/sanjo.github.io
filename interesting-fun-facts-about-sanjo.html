@@ -115,16 +115,17 @@
   </script>
 </head>
 <body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
   <div class="bg-orb orb-a" aria-hidden="true"></div>
   <div class="bg-orb orb-b" aria-hidden="true"></div>
 
   <header class="topbar" id="topbar">
     <div class="container nav-wrap">
       <a class="brand" href="./index.html">Sanjo Mathew</a>
-      <button class="menu-btn" id="menu-btn" aria-label="Toggle menu" aria-expanded="false">
+      <button class="menu-btn" id="menu-btn" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav">
         <span></span><span></span><span></span>
       </button>
-      <nav class="nav" id="nav">
+      <nav class="nav" id="nav" aria-label="Primary">
         <a href="./index.html">Home</a>
         <a href="./index.html#about">About</a>
         <a href="./index.html#programs">Programs</a>
@@ -135,7 +136,7 @@
     </div>
   </header>
 
-  <main>
+  <main id="main-content">
     <section class="hero section" id="fun-facts">
       <div class="container reveal">
         <div class="hero-card">
@@ -147,9 +148,9 @@
             <a class="btn btn-ghost" href="./index.html"><i class="ti-angle-double-left"></i> Back to Home</a>
           </div>
           <ul class="social-links" aria-label="Social links">
-            <li><a target="_blank" rel="noreferrer" href="https://www.facebook.com/sanjo.mathew.39"><i class="ti-facebook"></i></a></li>
-            <li><a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/sanjocinemathew/"><i class="ti-linkedin"></i></a></li>
-            <li><a target="_blank" rel="noreferrer" href="https://www.instagram.com/sanjocinemathew/"><i class="ti-instagram"></i></a></li>
+            <li><a target="_blank" rel="noreferrer" aria-label="Facebook profile" href="https://www.facebook.com/sanjo.mathew.39"><i class="ti-facebook" aria-hidden="true"></i></a></li>
+            <li><a target="_blank" rel="noreferrer" aria-label="LinkedIn profile" href="https://www.linkedin.com/in/sanjocinemathew/"><i class="ti-linkedin" aria-hidden="true"></i></a></li>
+            <li><a target="_blank" rel="noreferrer" aria-label="Instagram profile" href="https://www.instagram.com/sanjocinemathew/"><i class="ti-instagram" aria-hidden="true"></i></a></li>
           </ul>
         </div>
       </div>
@@ -243,7 +244,7 @@
     </div>
   </footer>
 
-  <script src="assets/js/modern-facts.js"></script>
+  <script defer src="assets/js/modern-facts.js"></script>
 </body>
 </html>
 

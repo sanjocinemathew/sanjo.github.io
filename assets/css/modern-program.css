@@ -28,8 +28,44 @@ h1,h2,h3,h4,h5,h6 { margin: 0; line-height: 1.2; }
 p { margin: 0; }
 a { color: inherit; text-decoration: none; }
 
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid #0f766e;
+  outline-offset: 2px;
+}
+
 .container { width: var(--container); margin-inline: auto; }
 .section { padding: 76px 0; }
+
+.skip-link {
+  position: absolute;
+  left: 16px;
+  top: -60px;
+  z-index: 999;
+  padding: 10px 14px;
+  border-radius: 8px;
+  color: #fff;
+  background: var(--primary-2);
+  font-weight: 700;
+  transition: top 0.2s ease;
+}
+
+.skip-link:focus {
+  top: 12px;
+}
+
+.sr-only {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
 
 .bg-orb {
   position: fixed;
@@ -288,4 +324,15 @@ a { color: inherit; text-decoration: none; }
     transform: translateY(0);
   }
   .footer-wrap { display: grid; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
 }

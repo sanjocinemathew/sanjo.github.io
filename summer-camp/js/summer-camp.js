@@ -1,6 +1,8 @@
 
 const bookAppointmentSubmit = document.getElementById("contactFormSubmitBtn");
-bookAppointmentSubmit.addEventListener("click", bkavalidate);
+if (bookAppointmentSubmit) {
+  bookAppointmentSubmit.addEventListener("click", bkavalidate);
+}
 function bkavalidate(e) {
   const formValidity = document.getElementById("contactForm").checkValidity();
   if (formValidity) {
