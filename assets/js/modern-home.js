@@ -2,6 +2,7 @@
   const topbar = document.getElementById("topbar");
   const nav = document.getElementById("nav");
   const menuBtn = document.getElementById("menu-btn");
+  const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
   const galleryImages = [
     "academic-rediness-proramme-for-students-bishop-moore-vidyapith-cherthala-sanjo-mathew-trainer.png",
@@ -173,13 +174,53 @@
   }
 
   function bindReveals() {
-    const nodes = Array.from(document.querySelectorAll(".reveal"));
-    if (!nodes.length) return;
-    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-      nodes.forEach(function (node) {
+    const sectionNodes = Array.from(document.querySelectorAll(".reveal"));
+    const staggerGroups = [
+      ".expertise-grid .card",
+      ".program-grid .program-card",
+      ".audience-grid .audience-card",
+      ".stats-grid article",
+      "#contact .contact-grid .panel"
+    ];
+    const itemNodes = [];
+
+    staggerGroups.forEach(function (selector) {
+      const group = Array.from(document.querySelectorAll(selector));
+      group.forEach(function (node, index) {
+        node.classList.add("reveal-item");
+        node.style.setProperty("--stagger", String(index));
+        itemNodes.push(node);
+      });
+    });
+
+    const allNodes = sectionNodes.concat(itemNodes);
+    const heroSection = document.getElementById("hero");
+
+    if (!allNodes.length && !heroSection) return;
+
+    if (prefersReducedMotion) {
+      allNodes.forEach(function (node) {
         node.classList.add("visible");
       });
+      if (heroSection) {
+        heroSection.classList.add("hero-inview");
+      }
       return;
+    }
+
+    document.body.classList.add("js-motion");
+
+    allNodes.forEach(function (node) {
+      const rect = node.getBoundingClientRect();
+      if (rect.top < window.innerHeight * 0.9) {
+        node.classList.add("visible");
+      }
+    });
+
+    if (heroSection) {
+      requestAnimationFrame(function () {
+        heroSection.classList.add("hero-inview");
+      });
     }
 
     const observer = new IntersectionObserver(
@@ -190,12 +231,104 @@
           obs.unobserve(entry.target);
         });
       },
-      { threshold: 0.12 }
+      { threshold: 0.12, rootMargin: "0px 0px -6% 0px" }
     );
 
-    nodes.forEach(function (node) {
+    allNodes.forEach(function (node) {
+      if (node.classList.contains("visible")) return;
       observer.observe(node);
     });
+  }
+
+  function bindCounters() {
+    const impactSection = document.getElementById("impact");
+    const counters = Array.from(document.querySelectorAll(".count-up[data-count]"));
+    if (!impactSection || !counters.length) return;
+
+    if (prefersReducedMotion) {
+      counters.forEach(function (counter) {
+        counter.textContent = counter.getAttribute("data-count");
+      });
+      return;
+    }
+
+    let hasAnimated = false;
+
+    function animateCounter(node, targetValue) {
+      const startTime = performance.now();
+      const duration = 1200;
+
+      function step(now) {
+        const elapsed = Math.min((now - startTime) / duration, 1);
+        const eased = 1 - Math.pow(1 - elapsed, 3);
+        const value = Math.floor(targetValue * eased);
+        node.textContent = String(value);
+
+        if (elapsed < 1) {
+          requestAnimationFrame(step);
+        } else {
+          node.textContent = String(targetValue);
+        }
+      }
+
+      requestAnimationFrame(step);
+    }
+
+    const observer = new IntersectionObserver(
+      function (entries, obs) {
+        entries.forEach(function (entry) {
+          if (!entry.isIntersecting || hasAnimated) return;
+          hasAnimated = true;
+
+          counters.forEach(function (counter) {
+            const target = Number(counter.getAttribute("data-count"));
+            if (!Number.isFinite(target)) return;
+            animateCounter(counter, target);
+          });
+
+          obs.unobserve(entry.target);
+        });
+      },
+      { threshold: 0.35 }
+    );
+
+    observer.observe(impactSection);
+  }
+
+  function bindHeroTypewriter() {
+    const title = document.querySelector("#hero .hero-title");
+    if (!title) return;
+
+    const fullText = title.textContent.trim();
+    if (!fullText) return;
+
+    if (prefersReducedMotion) {
+      title.textContent = fullText;
+      return;
+    }
+
+    // Keep heading space stable before typing to avoid visual jumps.
+    title.style.minHeight = title.offsetHeight + "px";
+    title.setAttribute("aria-label", fullText);
+    title.textContent = "";
+    title.classList.add("is-typing");
+
+    const startDelay = 420;
+    const charDelay = 36;
+    let index = 0;
+
+    function typeNext() {
+      index += 1;
+      title.textContent = fullText.slice(0, index);
+      if (index < fullText.length) {
+        window.setTimeout(typeNext, charDelay);
+      } else {
+        title.classList.remove("is-typing");
+        title.style.minHeight = "";
+      }
+    }
+
+    window.setTimeout(typeNext, startDelay);
   }
 
   async function submitForm(formId, buttonId, successMessage, errorMessage) {
@@ -248,6 +381,8 @@
   renderGallery();
   bindLightbox();
   bindReveals();
+  bindCounters();
+  bindHeroTypewriter();
   submitForm(
     "contactForm",
     "submit",
@@ -263,3 +398,4 @@
 
   window.addEventListener("scroll", toggleTopbar, { passive: true });
 })();
+
