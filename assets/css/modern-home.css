@@ -230,7 +230,7 @@ textarea:focus-visible {
   margin-bottom: 18px;
 }
 
-.hero-title.is-typing::after {
+.typewriting.is-typing::after {
   content: "";
   display: inline-block;
   width: 2px;

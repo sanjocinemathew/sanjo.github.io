@@ -310,6 +310,7 @@
     // Keep heading space stable before typing to avoid visual jumps.
     title.style.minHeight = title.offsetHeight + "px";
     title.setAttribute("aria-label", fullText);
+    title.classList.add("typewriting");
     title.textContent = "";
     title.classList.add("is-typing");
 
@@ -329,6 +330,65 @@
     }
 
     window.setTimeout(typeNext, startDelay);
+  }
+
+  function bindSectionTitleTypewriters() {
+    const titles = Array.from(document.querySelectorAll("main .section-head h2"));
+    if (!titles.length) return;
+
+    if (prefersReducedMotion) {
+      titles.forEach(function (title) {
+        title.classList.remove("is-typing");
+      });
+      return;
+    }
+
+    function typeTitle(title) {
+      const fullText = title.textContent.trim();
+      if (!fullText || title.dataset.typed === "true") return;
+
+      title.dataset.typed = "true";
+      title.style.minHeight = title.offsetHeight + "px";
+      title.setAttribute("aria-label", fullText);
+      title.classList.add("typewriting", "is-typing");
+      title.textContent = "";
+
+      let index = 0;
+      const charDelay = 24;
+
+      function typeNext() {
+        index += 1;
+        title.textContent = fullText.slice(0, index);
+        if (index < fullText.length) {
+          window.setTimeout(typeNext, charDelay);
+        } else {
+          title.classList.remove("is-typing");
+          title.style.minHeight = "";
+        }
+      }
+
+      window.setTimeout(typeNext, 120);
+    }
+
+    const observer = new IntersectionObserver(
+      function (entries, obs) {
+        entries.forEach(function (entry) {
+          if (!entry.isIntersecting) return;
+          typeTitle(entry.target);
+          obs.unobserve(entry.target);
+        });
+      },
+      { threshold: 0.45, rootMargin: "0px 0px -12% 0px" }
+    );
+
+    titles.forEach(function (title) {
+      const rect = title.getBoundingClientRect();
+      if (rect.top < window.innerHeight * 0.95) {
+        typeTitle(title);
+      } else {
+        observer.observe(title);
+      }
+    });
   }
 
   async function submitForm(formId, buttonId, successMessage, errorMessage) {
@@ -383,6 +443,7 @@
   bindReveals();
   bindCounters();
   bindHeroTypewriter();
+  bindSectionTitleTypewriters();
   submitForm(
     "contactForm",
     "submit",
