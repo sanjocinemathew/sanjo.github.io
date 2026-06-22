@@ -6542,7 +6542,8 @@ const canonicalRouteMap = {
   [routes.aboutAlias]: routes.about,
   [routes.waymakerAlias]: routes.waymaker,
   [routes.blogAlias]: routes.blog,
-  [routes.novaAlias]: routes.nova,
+  [routes.nova]: routes.waymaker,
+  [routes.novaAlias]: routes.waymaker,
   [routes.lqAlias]: routes.lq,
   [routes.shop]: bookRoute(books[1]),
   [routes.shopAlias]: bookRoute(books[1]),
@@ -6576,7 +6577,6 @@ const allRoutesNav = [
   { label: "Women Empowerment", route: routes.women },
   { label: "WayMaker Skills™", route: routes.waymaker },
   { label: "WAMI™", route: routes.wami },
-  { label: "NOVA™ Methodology", route: routes.nova },
   { label: "LQ™ Framework", route: routes.lq },
   { label: "Resume / Credentials", route: routes.resume },
   { label: "Gallery", route: routes.gallery },
@@ -6600,7 +6600,6 @@ const programMenu = [
 const frameworkMenu = [
   { label: "WayMaker Skills™ Overview", route: routes.waymaker, description: "Founder bridge and organizational context." },
   { label: "WAMI™", route: routes.wami, description: "Children's life skills through stories and play." },
-  { label: "NOVA™ Methodology", route: routes.nova, description: "Notice, Own, Visualize, and Act." },
   { label: "LQ™ Framework", route: routes.lq, description: "Think, feel, connect, act, and adapt." }
 ];
 
@@ -6758,7 +6757,7 @@ const expertiseAreas = [
   { title: "Parenting Guidance", copy: "Helping families create healthy boundaries, emotional security, and developmental support.", href: routes.schools },
   { title: "Student Mentorship", copy: "Confidence, study strategies, life skills, and purposeful preparation for the future.", href: routes.schools },
   { title: "Women Empowerment", copy: "Strength-based interventions for identity, confidence, expression, and purposeful action.", href: routes.women },
-  { title: "Future Skills", copy: "Readiness for a changing world through adaptability, self-management, and applied intelligence.", href: routes.nova }
+  { title: "Future Skills", copy: "Readiness for a changing world through adaptability, self-management, and applied intelligence.", href: routes.waymaker }
 ];
 
 const signaturePrograms = [
@@ -7015,7 +7014,8 @@ routeToLabel[routes.shopAlias] = "Books & Publications";
 routeToLabel[routes.shopBookAlias] = "The Resilience Response";
 routeToLabel[routes.aboutAlias] = "About Sanjo";
 routeToLabel[routes.waymakerAlias] = "WayMaker Skills™";
-routeToLabel[routes.novaAlias] = "NOVA™ Methodology";
+routeToLabel[routes.nova] = "WayMaker Skills™";
+routeToLabel[routes.novaAlias] = "WayMaker Skills™";
 routeToLabel[routes.lqAlias] = "LQ™ Framework";
 
 const footerColumns = [
@@ -9113,7 +9113,7 @@ const pages = [
           title: "NOVA™ — Human Development Methodology",
           copy: "Practical models that help individuals and institutions navigate learning, leadership, and future readiness.",
           links: [
-            anchor(routes.nova, "Read Overview", "btn btn-secondary"),
+            anchor(routes.waymaker, "Explore WayMaker Skills™", "btn btn-secondary"),
             anchor(waymakerLinks.nova, "Learn More at WayMaker Skills™", "btn btn-soft")
           ]
         },
@@ -9974,7 +9974,7 @@ const pages = [
         {
           title: "NOVA™ — Human Development Methodology",
           copy: "A structured pathway for turning awareness into action, helping people grow with greater purpose, ownership, and direction.",
-          links: [anchor(routes.nova, "Read Overview", "btn btn-secondary"), anchor(waymakerLinks.nova, "Learn More at WayMaker Skills™", "btn btn-soft")]
+          links: [anchor(routes.waymaker, "Explore WayMaker Skills™", "btn btn-secondary"), anchor(waymakerLinks.nova, "Learn More at WayMaker Skills™", "btn btn-soft")]
         },
         {
           title: "LQ™ — Life Intelligence Quotient Framework",
@@ -10161,150 +10161,6 @@ const pages = [
         actions: [
           anchor(routes.contact, "Start a Conversation", "btn btn-soft"),
           anchor(waymakerLinks.wami, "Explore at WayMaker Skills™", "btn btn-secondary")
-        ]
-      })
-    ].join("")
-  }),
-  page(routes.nova, {
-    bodyClass: "page-nova",
-    title: "NOVA™ Human Development Methodology | Sanjo Cine Mathew",
-    description: "NOVA™ stands for Notice, Own, Visualize, and Act. Explore the WayMaker Skills™ human development methodology that turns awareness into ownership, direction, and practical action.",
-    ogImage: "/assets/imgs/branding-4.jpg",
-    content: [
-      renderHero({
-        eyebrow: "NOVA™ Methodology",
-        title: "From awareness to action. From potential to practical growth.",
-        copy: "NOVA™ is the WayMaker Skills™ methodology for helping people notice more clearly, own growth more intentionally, visualize direction, and act with purpose.",
-        pills: ["Notice", "Own", "Visualize", "Act", "Evidence-informed"],
-        actions: [anchor(routes.programs, "Explore Programs", "btn btn-primary"), anchor(waymakerLinks.nova, "Learn More at WayMaker Skills™", "btn btn-secondary")],
-        media: { image: "/assets/imgs/branding-4.jpg", alt: "Structured methodology visual" },
-        panelTitle: "NOVA™ in sequence",
-        panelList: ["Notice", "Own", "Visualize", "Act"]
-      }, renderBreadcrumbs({ route: routes.nova, breadcrumbs: [{ label: "Home", route: routes.home }, { label: "WayMaker Skills™", route: routes.waymaker }, { label: "NOVA™ Methodology", route: routes.nova }] })),
-      `
-      <section class="section">
-        <div class="container split-panel">
-          <div class="story-card reveal">
-            ${sectionHeader({
-        eyebrow: "What NOVA™ Is",
-        title: "A repeatable human development pathway.",
-        copy: "NOVA™ is the methodology behind WayMaker Skills™ programs. It exists to close the gap between insight and behavior. Instead of stopping at understanding, it guides people into ownership, direction, and action."
-      })}
-            <p class="muted">That makes NOVA™ useful across different contexts. The audience may change, but the need stays consistent: people need a simple, disciplined way to move from reflection into capability.</p>
-          </div>
-          <div class="quote-panel reveal">
-            <blockquote>NOVA™ gives growth a structure people can repeat.</blockquote>
-            <p>That repeatability is what makes it useful in classrooms, teams, leadership programs, coaching spaces, and broader developmental journeys.</p>
-          </div>
-        </div>
-      </section>
-      `,
-      `
-      <section class="section">
-        <div class="container">
-          ${sectionHeader({
-        eyebrow: "The Four Stages",
-        title: "Notice. Own. Visualize. Act.",
-        copy: "The sequence is simple by design so that it can be used consistently across real human development contexts."
-      })}
-          <div class="nova-stages">
-            ${[
-        ["Notice", "Build awareness of self, others, and situation."],
-        ["Own", "Accept responsibility and develop a growth mindset."],
-        ["Visualize", "Create direction, purpose, and a path forward."],
-        ["Act", "Apply learning in real life with consistent action."]
-      ].map(([title, copy]) => `
-              <article class="nova-stage reveal">
-                <h3>${title}</h3>
-                <p>${copy}</p>
-              </article>
-            `).join("")}
-          </div>
-        </div>
-      </section>
-      `,
-      `
-      <section class="section">
-        <div class="container">
-          ${sectionHeader({
-        eyebrow: "What NOVA™ Integrates",
-        title: "A multidisciplinary foundation.",
-        copy: "NOVA™ is useful because it is not built on one narrow lens. It draws from multiple domains that shape how people change."
-      })}
-          ${renderCards([
-        { title: "Psychology", copy: "Awareness of emotion, behavior, thought, and pattern." },
-        { title: "Human Development", copy: "A staged view of how people grow across life contexts." },
-        { title: "Behavioral Insight", copy: "Attention to what actually drives repeated choices and habits." },
-        { title: "Leadership Principles", copy: "Responsibility, clarity, influence, and response under pressure." },
-        { title: "Future Skills", copy: "Adaptability, initiative, communication, and practical readiness." },
-        { title: "Experiential Learning", copy: "Growth through reflection, participation, and application." }
-      ], "card", "grid-3")}
-        </div>
-      </section>
-      `,
-      `
-      <section class="section">
-        <div class="container">
-          ${sectionHeader({
-        eyebrow: "NOVA™ In Practice",
-        title: "How NOVA™ shows up inside a program.",
-        copy: "The methodology becomes visible through a repeatable practice cycle rather than a one-time insight."
-      })}
-          <div class="timeline-steps">
-            ${[
-        ["Notice the current reality", "Increase awareness of patterns, context, strengths, and constraints."],
-        ["Own the growth task", "Build responsibility, mindset, and willingness to act differently."],
-        ["Visualize a better response", "Create a clearer internal picture of the desired change and direction."],
-        ["Act in the real world", "Move the insight into behavior, decision-making, communication, and practice."],
-        ["Repeat and deepen", "Growth strengthens when the cycle is revisited with reflection and application."]
-      ].map(([title, copy]) => `
-              <article class="timeline-step reveal">
-                <h3>${title}</h3>
-                <p>${copy}</p>
-              </article>
-            `).join("")}
-          </div>
-        </div>
-      </section>
-      `,
-      `
-      <section class="section">
-        <div class="container">
-          ${sectionHeader({
-        eyebrow: "Where NOVA™ Applies",
-        title: "Designed for every life stage.",
-        copy: "The audience can change, but the movement from awareness to action remains useful across all of them."
-      })}
-          ${renderCards([
-        { title: "Students", copy: "Build awareness, responsibility, direction, and follow-through." },
-        { title: "Educators", copy: "Use reflective practice and purposeful teaching behaviors." },
-        { title: "Parents", copy: "Respond to family growth with more steadiness and clarity." },
-        { title: "Professionals", copy: "Translate reflection into workplace effectiveness and action." },
-        { title: "Leaders", copy: "Grow in ownership, direction, communication, and influence." },
-        { title: "Corporate Teams", copy: "Create shared language for growth, feedback, and accountability." },
-        { title: "Communities", copy: "Support collective development with practical behavior change." },
-        { title: "Institutions", copy: "Build human development pathways with structure instead of chance." }
-      ], "card", "grid-4")}
-        </div>
-      </section>
-      `,
-      faqSection({
-        eyebrow: "Questions About NOVA™",
-        title: "Questions about NOVA™",
-        copy: "A quick orientation to the methodology and why it matters.",
-        items: [
-          { q: "What does NOVA™ stand for?", a: "NOVA™ stands for Notice, Own, Visualize, and Act." },
-          { q: "How is NOVA™ used in programs?", a: "It provides the sequence behind reflection, skill-building, coaching, leadership development, and behavior-change work." },
-          { q: "Is NOVA™ only for leadership training?", a: "No. It can be used across students, parents, professionals, teams, institutions, and leadership contexts." },
-          { q: "Why does methodology matter in human development?", a: "Because people need more than inspiration. A clear methodology helps insight become repeatable action." }
-        ]
-      }),
-      ctaBand({
-        title: "Build a NOVA™-based development journey.",
-        copy: "From classrooms to corporate teams, NOVA™ gives growth a clear pathway instead of leaving change to chance.",
-        actions: [
-          anchor(routes.contact, "Start a Conversation", "btn btn-soft"),
-          anchor(waymakerLinks.nova, "Explore at WayMaker Skills™", "btn btn-secondary")
         ]
       })
     ].join("")
@@ -11253,7 +11109,8 @@ const legacyRedirects = [
   { from: "shop/index.html", to: bookRoute(books[1]) },
   { from: "shop-the-resilience-response/index.html", to: bookRoute(books[1]) },
   ...books.map((book) => ({ from: `${legacyBookRoute(book).replace(/^\/|\/$/g, "")}/index.html`, to: bookRoute(book) })),
-  { from: "nova-methodology/index.html", to: routes.nova },
+  { from: "nova-human-development-methodology/index.html", to: routes.waymaker },
+  { from: "nova-methodology/index.html", to: routes.waymaker },
   { from: "lq-life-intelligence-quotient/index.html", to: routes.lq },
   ...blogPosts.map((post) => ({ from: `blog/${post.slug}/index.html`, to: `${routes.blog}${post.slug}/` }))
 ];
@@ -11264,6 +11121,7 @@ function redirectHtml(target) {
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta name="robots" content="noindex, nofollow">
   <meta http-equiv="refresh" content="0; url=${publicTarget}">
   <link rel="canonical" href="${fullUrl(target)}">
   <script>location.replace(${JSON.stringify(publicTarget)});</script>
